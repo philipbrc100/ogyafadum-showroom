@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogyafadum Car Imports & Sales | Premium European Showroom</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="premium-nav">
+    <div class="nav-container">
+        <!-- Upgraded Brand Identity Layout -->
+        <div class="brand-logo">
+            Ogyafadum <span class="accent-highlight">Car Imports</span>
+        </div>
+        
+        <!-- Modernized Navigation Action Hub -->
+        <div class="nav-actions">
+    <!-- Clean Email Inline Link -->
+    <a href="mailto:info@ogyafadum.com" class="nav-link-email">
+        Email Us
+    </a>
+
+    <a href="https://wa.me/233540677510" target="_blank" class="nav-link-whatsapp">
+        <span class="pulse-dot"></span> Quick Chat
+    </a>
+    
+    
+    <a href="#showroom" class="btn-modern-nav">Explore Inventory</a>
+</div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Ogyafadum Car Imports & Sales</h1>
+        <p>Your Trusted Link to Premium European Car Imports</p>
+    </header>
+
+    <!-- Info/Process Sections Box Panel -->
+    <section class="features-container">
+        <!-- How It Works Box -->
+        <div class="feature-pane">
+            <h2>How It Works</h2>
+            <ul class="steps-list">
+                <li>
+                    <strong>1. CHOOSE YOUR CAR</strong>
+                    <p>Browse our catalog or notify us of the exact make, model, and year parameters you desire.</p>
+                </li>
+                <li>
+                    <strong>2. WE FIND & INSPECT</strong>
+                    <p>We source structural matches through dedicated European auctions and execute intensive physical inspections.</p>
+                </li>
+                <li>
+                    <strong>3. SAFE DELIVERY</strong>
+                    <p>Guaranteed secure logistics pipelines directly to your specified destination inside Ghana.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Why Choose Us Box -->
+        <div class="feature-pane">
+            <h2>Why Choose Us?</h2>
+            <ul class="steps-list">
+                <li>
+                    <strong>BEST PRICE ASSURANCE</strong>
+                    <p>Direct premium bidding parameters without clearing intermediaries or localized markups.</p>
+                </li>
+                <li>
+                    <strong>EXPEDITED PROCESSING</strong>
+                    <p>Optimized legal documentation and rapid sea-freight booking lines.</p>
+                </li>
+                <li>
+                    <strong>TRUSTED WORLDWIDE PRESENCE</strong>
+                    <p>Fully established procurement structures locally in Ghana and cross-border teams inside Sweden.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Showroom Entry Catalog -->
+    <section id="showroom" class="catalog-header">
+        <h2>Live Showroom Fleet</h2>
+        <span class="inventory-count"><strong id="count-label">20</strong> Premium Vehicles Available</span>
+    </section>
+
+    <!-- Empty container where JS will inject the 20 cars -->
+    <div class="showroom-grid" id="gallery"></div>
+
+  <!-- Micro-Modal Specification Frame -->
+<div class="modal" id="carModal" onclick="closeModal(event)">
+    <div class="modal-wrapper" onclick="event.stopPropagation()">
+        <button class="modal-close-trigger" onclick="closeModal()">&times;</button>
+        <img id="modalImg" src="" alt="Showcase vehicle" class="modal-hero-img">
+        <div class="modal-body modal-info-pane">
+            <h2 id="modalTitle">Vehicle Model</h2>
+            
+            <!-- Cleaned up description block without any toggle buttons below it -->
+            <p id="modalDesc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;"></p>
+            
+            <div class="modal-spec-grid">
+                <div class="spec-cell"><span>Procurement</span><strong id="specOrigin">-</strong></div>
+                <div class="spec-cell"><span>Classification</span><strong id="specType">-</strong></div>
+                <div class="spec-cell"><span>Year Model</span><strong id="specYear">-</strong></div>
+                <div class="spec-cell"><span>Transit Status</span><strong id="specStatus">-</strong></div>
+            </div>
+
+            <div class="action-tray">
+                <button class="btn btn-primary" id="shareBtn">Copy Direct Share Link</button>
+                <a href="https://wa.me/233540677510" target="_blank" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Corporate Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-brand">
+                <h3>Ogyafadum <span>Car Sales</span></h3>
+                <p>We leverage specialized bidding rights in international hubs to bring you highly reliable consumer vehicles at absolute cost floor parity.</p>
+            </div>
+            <div class="footer-contacts">
+                <h4>🇬🇭 Ghana Logistics Hub</h4>
+                <p>0540677510</p>
+                <span>Call / WhatsApp Inquiries</span>
+            </div>
+            <div class="footer-contacts">
+                <h4>🇸🇪 Sweden Sourcing Branch</h4>
+                <p>+46 72 847 22 95</p>
+                <span>Stockholm Operations Desk</span>
+            </div>
+        </div>
+        <div class="footer-base">
+            &copy; 2026 Ogyafadum Car Imports and Sales. We bring you your dream car from Europe at the cheapest price ever!
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript core architecture -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
