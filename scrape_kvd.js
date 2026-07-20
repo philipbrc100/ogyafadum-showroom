@@ -271,7 +271,7 @@ async function scrapeCar() {
                 if (imgRes.ok) {
                     const arrayBuffer = await imgRes.arrayBuffer();
                     fs.writeFileSync(destPath, Buffer.from(arrayBuffer));
-                    savedImages[role] = clientPath;
+                    savedImages[role] = clientPath.replace('\/', '/'); 
                 } else {
                     throw new Error(`HTTP error ${imgRes.status}`);
                 }
