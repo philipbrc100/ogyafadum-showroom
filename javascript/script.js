@@ -109,10 +109,10 @@ const carData = [
         title: "Toyota Yaris 1.33 5dr (100hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 11 379 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "/assets/car-001-exterior.jpg",
-            interior: "/assets/car-001-interior.jpg",
-            cockpit: "/assets/car-001-cockpit.jpg",
-            engine: "/assets/car-001-engine.jpg"
+            exterior: "assets/car-001-exterior.jpg",
+            interior: "assets/car-001-interior.jpg",
+            cockpit: "assets/car-001-cockpit.jpg",
+            engine: "assets/car-001-engine.jpg"
         },
         specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2010", status: "Available", hp: "101 hp", transmission: "Automatic", plate: "SXC-901" },
         basePriceGHS: 100000
