@@ -1,0 +1,6 @@
+{
+  "name": "Ogyafadum Showroom",
+  "description": "Premium European Car Imports & Sales Showroom with mobile-optimized responsive layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
