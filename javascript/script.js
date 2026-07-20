@@ -25,10 +25,10 @@ const carData = [
         title: "Toyota Corolla 1.8 Hybrid Touring Sports (122hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 13 272 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "/assets/car-022-exterior.jpg",
-            interior: "/assets/car-022-interior.jpg",
-            cockpit: "/assets/car-022-cockpit.jpg",
-            engine: "/assets/car-022-engine.jpg"
+            exterior: "./assets/car-022-exterior.jpg",
+            interior: "./assets/car-022-interior.jpg",
+            cockpit: "./assets/car-022-cockpit.jpg",
+            engine: "./assets/car-022-engine.jpg"
         },
         specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2020", status: "Available", hp: "98 hp", transmission: "Automatic", plate: "KVD-895" },
         basePriceGHS: 170000
