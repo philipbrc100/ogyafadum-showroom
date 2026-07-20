@@ -6,6 +6,76 @@
 // ==========================================================================
 const carData = [
     {
+        id: "car-028",
+        badge: "Premium Sedan",
+        title: "Toyota Hilux 2.4 D 4WD (150hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 19 587 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-028-exterior.jpg",
+            interior: "assets/car-028-interior.jpg",
+            cockpit: "assets/car-028-cockpit.jpg",
+            engine: "assets/car-028-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2016", status: "Available", hp: "150 hp", transmission: "Automatic", plate: "KVD-344" },
+        basePriceGHS: 270000
+    },
+    {
+        id: "car-027",
+        badge: "Hybrid SUV",
+        title: "Toyota C-HR 1.8 HSD (122hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 8 887 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-027-exterior.jpg",
+            interior: "assets/car-027-interior.jpg",
+            cockpit: "assets/car-027-cockpit.jpg",
+            engine: "assets/car-027-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2019", status: "Available", hp: "98 hp", transmission: "Automatic", plate: "KVD-590" },
+        basePriceGHS: 265000
+    },
+    {
+        id: "car-026",
+        badge: "Hybrid Sedan",
+        title: "Toyota Yaris Cross 1.5 Hybrid AWD (116hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 1 987 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-026-exterior.jpg",
+            interior: "assets/car-026-interior.jpg",
+            cockpit: "assets/car-026-cockpit.jpg",
+            engine: "assets/car-026-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2022", status: "Available", hp: "92 hp", transmission: "Automatic", plate: "KVD-408" },
+        basePriceGHS: 355000
+    },
+    {
+        id: "car-025",
+        badge: "Hybrid SUV",
+        title: "Toyota RAV4 2.5 HSD AWD (222hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 4 454 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-025-exterior.jpg",
+            interior: "assets/car-025-interior.jpg",
+            cockpit: "assets/car-025-cockpit.jpg",
+            engine: "assets/car-025-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2024", status: "Available", hp: "178 hp", transmission: "Automatic", plate: "KVD-913" },
+        basePriceGHS: 610000
+    },
+    {
+        id: "car-024",
+        badge: "Hybrid Sedan",
+        title: "Toyota Prius 1.5 Hybrid (78hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 14 803 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-024-exterior.jpg",
+            interior: "assets/car-024-interior.jpg",
+            cockpit: "assets/car-024-cockpit.jpg",
+            engine: "assets/car-024-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2008", status: "Available", hp: "78 hp", transmission: "Automatic", plate: "KVD-198" },
+        basePriceGHS: 35000
+    },
+    {
         id: "car-023",
         badge: "Hybrid Sedan",
         title: "Toyota Yaris 1.5 Hybrid 5dr (116hk)",
@@ -36,283 +106,186 @@ const carData = [
     {
         id: "car-001",
         badge: "Premium Sedan",
-        title: "Toyota Aygo 1.0 VVT-i 5dr (68hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 11 116 mil odometer reading and premium Swedish executive specifications.",
+        title: "Toyota Yaris 1.33 5dr (100hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 11 379 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "assets/car-001-exterior.jpg",
-            interior: "assets/car-001-interior.jpg",
-            cockpit: "assets/car-001-cockpit.jpg",
-            engine: "assets/car-001-engine.jpg"
+            exterior: "/assets/car-001-exterior.jpg",
+            interior: "/assets/car-001-interior.jpg",
+            cockpit: "/assets/car-001-cockpit.jpg",
+            engine: "/assets/car-001-engine.jpg"
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2010", status: "Available", hp: "68 hp", transmission: "Manual", plate: "SXC-901" },
-        basePriceGHS: 55000
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2010", status: "Available", hp: "101 hp", transmission: "Automatic", plate: "SXC-901" },
+        basePriceGHS: 100000
     },
     {
-        id: "car-002",
-        badge: "Luxury Sedan",
-        title: "BMW 530e iPerformance",
-        desc: "Executive saloon with premium leather interior and advanced driver assistance systems.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
+        id: "car-040",
+        badge: "Premium SUV",
+        title: "BMW X3 xDrive20d, F25 (190hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 11 754 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-040-exterior.jpg",
+            interior: "assets/car-040-interior.jpg",
+            cockpit: "assets/car-040-cockpit.jpg",
+            engine: "assets/car-040-engine.jpg"
         },
-        specs: { origin: "Germany 🇩🇪", type: "Plug-in Hybrid", year: "2021", status: "Available", hp: "252 hp", transmission: "8-Speed Automatic", plate: "BDE-530" },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", status: "Available", hp: "190 hp", transmission: "Automatic", plate: "KVD-215" },
+        basePriceGHS: 255000
+    },
+    {
+        id: "car-039",
+        badge: "Premium Wagon",
+        title: "BMW 530d xDrive Touring, F11 (258hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 16 592 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-039-exterior.jpg",
+            interior: "assets/car-039-interior.jpg",
+            cockpit: "assets/car-039-cockpit.jpg",
+            engine: "assets/car-039-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2014", status: "Available", hp: "258 hp", transmission: "Automatic", plate: "KVD-177" },
+        basePriceGHS: 175000
+    },
+    {
+        id: "car-038",
+        badge: "Premium Sedan",
+        title: "BMW 330d GT xDrive, F34 (258hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 17 991 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-038-exterior.jpg",
+            interior: "assets/car-038-interior.jpg",
+            cockpit: "assets/car-038-cockpit.jpg",
+            engine: "assets/car-038-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", status: "Available", hp: "258 hp", transmission: "Automatic", plate: "KVD-293" },
+        basePriceGHS: 190000
+    },
+    {
+        id: "car-037",
+        badge: "Premium SUV",
+        title: "Honda CR-V 1 6i-DTEC 2WD (120hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Honda with a fully documented 10 734 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-037-exterior.jpg",
+            interior: "assets/car-037-interior.jpg",
+            cockpit: "assets/car-037-cockpit.jpg",
+            engine: "assets/car-037-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2014", status: "Available", hp: "120 hp", transmission: "Manual", plate: "KVD-415" },
+        basePriceGHS: 145000
+    },
+    {
+        id: "car-036",
+        badge: "Premium Wagon",
+        title: "Audi A4 Avant 40 TDI quattro (204hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 12 458 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-036-exterior.jpg",
+            interior: "assets/car-036-interior.jpg",
+            cockpit: "assets/car-036-cockpit.jpg",
+            engine: "assets/car-036-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2023", status: "Available", hp: "204 hp", transmission: "Automatic", plate: "KVD-625" },
+        basePriceGHS: 230000
+    },
+    {
+        id: "car-035",
+        badge: "Premium Sedan",
+        title: "Audi A5 Sportback 45 TFSI quattro (265hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 11 852 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-035-exterior.jpg",
+            interior: "assets/car-035-interior.jpg",
+            cockpit: "assets/car-035-cockpit.jpg",
+            engine: "assets/car-035-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2021", status: "Available", hp: "265 hp", transmission: "Automatic", plate: "KVD-895" },
+        basePriceGHS: 255000
+    },
+    {
+        id: "car-034",
+        badge: "Premium SUV",
+        title: "Audi Q3 40 TDI quattro (200hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 8 635 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-034-exterior.jpg",
+            interior: "assets/car-034-interior.jpg",
+            cockpit: "assets/car-034-cockpit.jpg",
+            engine: "assets/car-034-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2021", status: "Available", hp: "200 hp", transmission: "Automatic", plate: "KVD-460" },
+        basePriceGHS: 255000
+    },
+    {
+        id: "car-033",
+        badge: "Electric SUV",
+        title: "Audi e-tron 55 quattro 95kWh (360hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 18 524 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-033-exterior.jpg",
+            interior: "assets/car-033-interior.jpg",
+            cockpit: "assets/car-033-cockpit.jpg",
+            engine: "assets/car-033-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2021", status: "Available", hp: "408 hp", transmission: "Automatic", plate: "KVD-949" },
+        basePriceGHS: 215000
+    },
+    {
+        id: "car-032",
+        badge: "Electric Compact",
+        title: "Nissan LEAF 5dr 59kWh (214hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 3 241 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-032-exterior.jpg",
+            interior: "assets/car-032-interior.jpg",
+            cockpit: "assets/car-032-cockpit.jpg",
+            engine: "assets/car-032-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2023", status: "Available", hp: "218 hp", transmission: "Automatic", plate: "KVD-948" },
+        basePriceGHS: 205000
+    },
+    {
+        id: "car-031",
+        badge: "Electric SUV",
+        title: "Nissan Ariya 87kWh e-4orce (306hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 5 175 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-031-exterior.jpg",
+            interior: "assets/car-031-interior.jpg",
+            cockpit: "assets/car-031-cockpit.jpg",
+            engine: "assets/car-031-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2023", status: "Available", hp: "306 hp", transmission: "Automatic", plate: "KVD-552" },
+        basePriceGHS: 450000
+    },
+    {
+        id: "car-030",
+        badge: "Premium SUV",
+        title: "Nissan X-Trail e-Power (204hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 4 164 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-030-exterior.jpg",
+            interior: "assets/car-030-interior.jpg",
+            cockpit: "assets/car-030-cockpit.jpg",
+            engine: "assets/car-030-engine.jpg"
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2023", status: "Available", hp: "158 hp", transmission: "Automatic", plate: "KVD-379" },
         basePriceGHS: 360000
     },
     {
-        id: "car-003",
-        badge: "Electric Compact",
-        title: "Tesla Model 3 Long Range",
-        desc: "Pure electric power with long-range dual motor capability. Ultra-clean import.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2021", status: "Sold", hp: "346 hp", transmission: "Single Speed", plate: "TSL-301" },
-        basePriceGHS: 385000
-    },
-    {
-        id: "car-004",
-        badge: "Family SUV",
-        title: "Audi Q5 40 TDI Quattro",
-        desc: "Highly efficient diesel cruiser with matrix LED headlights and spacious cargo layout.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Diesel Turbo", year: "2020", status: "Available", hp: "190 hp", transmission: "7-Speed S-Tronic", plate: "AQD-040" },
-        basePriceGHS: 310000
-    },
-    {
-        id: "car-005",
-        badge: "Compact SUV",
-        title: "Volvo XC40 D4 AWD",
-        desc: "Smart urban design combined with Sweden's industry-leading safety tech suites.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2019", status: "Available", hp: "190 hp", transmission: "8-Speed Automatic", plate: "VXC-404" },
-        basePriceGHS: 275000
-    },
-    {
-        id: "car-006",
-        badge: "Executive Estate",
-        title: "Mercedes-Benz E220d Wagon",
-        desc: "The ultimate long-distance hauler, sourced from careful ownership in Gothenburg.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2021", status: "In Transit", hp: "194 hp", transmission: "9-Speed G-Tronic", plate: "MBE-220" },
-        basePriceGHS: 345000
-    },
-    {
-        id: "car-007",
-        badge: "Sports Sedan",
-        title: "BMW 320i M Sport",
-        desc: "Aggressive styling accents with sharp, dynamic handling. Exceptionally low mileage.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Petrol Turbo", year: "2020", status: "Available", hp: "184 hp", transmission: "8-Speed Automatic", plate: "BMS-320" },
-        basePriceGHS: 290000
-    },
-    {
-        id: "car-008",
-        badge: "Electric SUV",
-        title: "Volkswagen ID.4 Pro",
-        desc: "Next-generation green mobility with massive central infotainment and panoramic roof.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Electric", year: "2022", status: "Available", hp: "204 hp", transmission: "Single Speed", plate: "VID-400" },
-        basePriceGHS: 350000
-    },
-    {
-        id: "car-009",
-        badge: "Premium Hatch",
-        title: "Audi A3 Sportback TFSIe",
-        desc: "Compact premium plug-in hybrid tailored for nimble city commuting profiles.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2021", status: "Available", hp: "204 hp", transmission: "6-Speed S-Tronic", plate: "ATF-021" },
-        basePriceGHS: 260000
-    },
-    {
-        id: "car-010",
-        badge: "Coupe SUV",
-        title: "BMW X4 xDrive30i",
-        desc: "Sporty fastback silhouette lines featuring custom premium alloy wheel upgrades.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Petrol Turbo", year: "2020", status: "Sold", hp: "252 hp", transmission: "8-Speed Automatic", plate: "BXW-430" },
-        basePriceGHS: 340000
-    },
-    {
-        id: "car-011",
-        badge: "Luxury SUV",
-        title: "Range Rover Velar D300",
-        desc: "Striking avant-garde aesthetics paired with powerful twin-turbo pull performance.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Diesel Twin-Turbo", year: "2019", status: "Available", hp: "300 hp", transmission: "8-Speed Automatic", plate: "RRV-300" },
-        basePriceGHS: 395000
-    },
-    {
-        id: "car-012",
-        badge: "Luxury Sedan",
-        title: "Volvo S90 D4 Inscription",
-        desc: "Top-tier Scandinavian luxury trim tier with fine wooden inlays and crystal gear selector.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2020", status: "Available", hp: "190 hp", transmission: "8-Speed Automatic", plate: "VSI-904" },
-        basePriceGHS: 295000
-    },
-    {
-        id: "car-013",
-        badge: "Electric Crossover",
-        title: "Kia EV6 GT-Line",
-        desc: "Ultra-fast charging architecture with futuristic cockpit design layouts.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2022", status: "In Transit", hp: "325 hp", transmission: "Single Speed", plate: "KEV-602" },
-        basePriceGHS: 355000
-    },
-    {
-        id: "car-014",
+        id: "car-029",
         badge: "Premium SUV",
-        title: "Mercedes-Benz GLC 300de",
-        desc: "Intelligent plug-in diesel hybrid engineering delivering unparalleled fuel efficiency metrics.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
+        title: "Nissan Qashqai 1.2 (115hk)",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 8 415 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-029-exterior.jpg",
+            interior: "assets/car-029-interior.jpg",
+            cockpit: "assets/car-029-cockpit.jpg",
+            engine: "assets/car-029-engine.jpg"
         },
-        specs: { origin: "Germany 🇩🇪", type: "Diesel Hybrid", year: "2021", status: "Available", hp: "306 hp", transmission: "9-Speed G-Tronic", plate: "MGL-300" },
-        basePriceGHS: 370000
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", status: "Available", hp: "116 hp", transmission: "Automatic", plate: "KVD-493" },
+        basePriceGHS: 255000
     },
-    {
-        id: "car-015",
-        badge: "Performance Hatch",
-        title: "Volkswagen Golf GTI Clubsport",
-        desc: "Track-focused performance hot-hatch directly imported from premium German enthusiasts.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Petrol Turbo", year: "2021", status: "Available", hp: "300 hp", transmission: "7-Speed DSG", plate: "VGT-015" },
-        basePriceGHS: 280000
-    },
-    {
-        id: "car-016",
-        badge: "Rugged Cross",
-        title: "Volvo V60 Cross Country",
-        desc: "Raised ride clearance height with robust protection panel borders for rougher road terrains.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol AWD", year: "2020", status: "Available", hp: "250 hp", transmission: "8-Speed Automatic", plate: "VCC-602" },
-        basePriceGHS: 290000
-    },
-    {
-        id: "car-017",
-        badge: "Compact Premium",
-        title: "Mini Cooper S 5-Door",
-        desc: "Classic go-kart driving dynamics optimized inside a practical five-door chassis format.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Petrol Sport Turbo", year: "2019", status: "Available", hp: "192 hp", transmission: "7-Speed DCT", plate: "MCS-500" },
-        basePriceGHS: 195000
-    },
-    {
-        id: "car-018",
-        badge: "Luxury SUV",
-        title: "Porsche Macan S",
-        desc: "The sports car of compact luxury SUVs, featuring an immaculate twin-turbo V6 engine.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Petrol V6 Twin-Turbo", year: "2020", status: "Sold", hp: "354 hp", transmission: "7-Speed PDK", plate: "PMS-480" },
-        basePriceGHS: 430000
-    },
-    {
-        id: "car-019",
-        badge: "Flagship Luxury",
-        title: "Audi A8 L 50 TDI",
-        desc: "Long wheelbase variant offering rear executive lounge seating and elite sound insulation.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Germany 🇩🇪", type: "Diesel Quattro", year: "2021", status: "Available", hp: "286 hp", transmission: "8-Speed Tiptronic", plate: "AQL-850" },
-        basePriceGHS: 460000
-    },
-    {
-        id: "car-020",
-        badge: "Electric Fastback",
-        title: "Polestar 2 Long Range",
-        desc: "Premium electric performance fastback from Sweden, offering minimal minimalist design and high output.",
-        images: { 
-            exterior: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=800&q=80", 
-            interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-            cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-            engine: "https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=800&q=80"
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2022", status: "Available", hp: "408 hp", transmission: "Single Speed", plate: "PST-202" },
-        basePriceGHS: 390000
-    }
+    
 ];
 
 // Active vehicle state

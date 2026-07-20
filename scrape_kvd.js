@@ -271,19 +271,12 @@ async function scrapeCar() {
                 if (imgRes.ok) {
                     const arrayBuffer = await imgRes.arrayBuffer();
                     fs.writeFileSync(destPath, Buffer.from(arrayBuffer));
-                    savedImages[role] = clientPath.replace('\/', '/'); 
+                    savedImages[role] = clientPath.replace('\/', ''); 
                 } else {
                     throw new Error(`HTTP error ${imgRes.status}`);
                 }
             } catch (err) {
                 console.warn(` Failed to download ${role} image. Using fallback URL.`);
-                const fallbacks = {
-                    exterior: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80",
-                    interior: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
-                    cockpit: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80",
-                    engine: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
-                };
-                savedImages[role] = fallbacks[role];
             }
         }
         
