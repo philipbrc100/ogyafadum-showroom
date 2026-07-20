@@ -11,10 +11,10 @@ const carData = [
         title: "Toyota Yaris 1.5 Hybrid 5dr (116hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 8 319 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "/assets/car-023-exterior.jpg",
-            interior: "/assets/car-023-interior.jpg",
-            cockpit: "/assets/car-023-cockpit.jpg",
-            engine: "/assets/car-023-engine.jpg"
+            exterior: "assets/car-023-exterior.jpg",
+            interior: "assets/car-023-interior.jpg",
+            cockpit: "assets/car-023-cockpit.jpg",
+            engine: "assets/car-023-engine.jpg"
         },
         specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2022", status: "Available", hp: "92 hp", transmission: "Automatic", plate: "KVD-636" },
         basePriceGHS: 255000
@@ -25,10 +25,10 @@ const carData = [
         title: "Toyota Corolla 1.8 Hybrid Touring Sports (122hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 13 272 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "./assets/car-022-exterior.jpg",
-            interior: "./assets/car-022-interior.jpg",
-            cockpit: "./assets/car-022-cockpit.jpg",
-            engine: "./assets/car-022-engine.jpg"
+            exterior: "assets/car-022-exterior.jpg",
+            interior: "assets/car-022-interior.jpg",
+            cockpit: "assets/car-022-cockpit.jpg",
+            engine: "assets/car-022-engine.jpg"
         },
         specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2020", status: "Available", hp: "98 hp", transmission: "Automatic", plate: "KVD-895" },
         basePriceGHS: 170000
@@ -39,10 +39,10 @@ const carData = [
         title: "Toyota Aygo 1.0 VVT-i 5dr (68hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 11 116 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "/assets/car-001-exterior.jpg",
-            interior: "/assets/car-001-interior.jpg",
-            cockpit: "/assets/car-001-cockpit.jpg",
-            engine: "/assets/car-001-engine.jpg"
+            exterior: "assets/car-001-exterior.jpg",
+            interior: "assets/car-001-interior.jpg",
+            cockpit: "assets/car-001-cockpit.jpg",
+            engine: "assets/car-001-engine.jpg"
         },
         specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2010", status: "Available", hp: "68 hp", transmission: "Manual", plate: "SXC-901" },
         basePriceGHS: 55000
