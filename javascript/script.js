@@ -1,12 +1,9 @@
 // ==========================================================================
-// OGYAFADUM CAR IMPORTS - INVENTORY ENGINE (COMPLETE FILE)
+// OGYAFADUM CAR IMPORTS - INVENTORY ENGINE (RESPONSIVE & TOUCH-OPTIMIZED)
 // ==========================================================================
 
-// 1. Core Vehicle Database Array
+// 1. Core Vehicle Database Array (20 Premium Fleet)
 // ==========================================================================
-// OGYAFADUM CAR IMPORTS - INVENTORY ENGINE (20 VEHICLE FLEET)
-// ==========================================================================
-
 const carData = [
     {
         id: "car-001",
@@ -170,13 +167,23 @@ const carData = [
     }
 ];
 
-// Initialize Showroom Elements when DOM is completely loaded
+// Current targeted vehicle for link sharing actions
+let activeCarForShare = null;
+
+// ==========================================================================
+// 2. Initialization & Boot Event Registers
+// ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
     renderShowroom();
+    setupMobileNavigation();
     setupModalListeners();
+    setupShareButton();
+    setupDeepLinking();
 });
 
-// 2. Dynamic Showroom Card Rendering Engine
+// ==========================================================================
+// 3. Dynamic Showroom Card Rendering Engine
+// ==========================================================================
 function renderShowroom() {
     const countLabel = document.getElementById('count-label');
     if (countLabel) countLabel.innerText = carData.length;
@@ -186,13 +193,22 @@ function renderShowroom() {
 
     galleryGrid.innerHTML = carData.map(car => {
         const isSoldOut = car.specs.status.toLowerCase() === 'sold';
+        const isInTransit = car.specs.status.toLowerCase() === 'in transit';
+        
+        let statusClass = 'tag-available';
+        if (isSoldOut) {
+            statusClass = 'tag-sold';
+        } else if (isInTransit) {
+            statusClass = 'tag-transit';
+        }
+
         const cardImage = car.images && car.images.exterior ? car.images.exterior : '';
         
         return `
             <div class="car-card ${isSoldOut ? 'is-sold-out' : ''}" data-id="${car.id}">
                 <div class="car-img-wrapper">
                     <img src="${cardImage}" alt="${car.title}" loading="lazy">
-                    <span class="status-tag ${isSoldOut ? 'tag-sold' : 'tag-available'}">
+                    <span class="status-tag ${statusClass}">
                         ${car.specs.status}
                     </span>
                 </div>
@@ -210,11 +226,61 @@ function renderShowroom() {
     }).join('');
 }
 
-// 3. Setup Modal Pop-up Interactivity Action Event Controls
+// ==========================================================================
+// 4. Mobile Collapsible Navigation Drawer Handles
+// ==========================================================================
+function setupMobileNavigation() {
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const premiumNav = document.querySelector('.premium-nav');
+    const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-btn');
+
+    if (!menuToggle || !mobileDrawer || !premiumNav) return;
+
+    const toggleMenu = () => {
+        const isOpen = mobileDrawer.classList.toggle('active');
+        premiumNav.classList.toggle('menu-open', isOpen);
+        
+        // Block document scrolling behind active drawer
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    };
+
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    // Close menu when tapping any internal links
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileDrawer.classList.remove('active');
+            premiumNav.classList.remove('menu-open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Tap outside to close drawer
+    document.addEventListener('click', (e) => {
+        if (mobileDrawer.classList.contains('active') && 
+            !mobileDrawer.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            mobileDrawer.classList.remove('active');
+            premiumNav.classList.remove('menu-open');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+// ==========================================================================
+// 5. Setup Lightbox Modal Pop-up Control Systems
+// ==========================================================================
 function setupModalListeners() {
     const galleryGrid = document.getElementById('gallery'); 
     const modal = document.getElementById('carModal');
-    const closeBtn = document.querySelector('.modal-close-trigger') || document.querySelector('.close-modal');
 
     if (!galleryGrid || !modal) return;
 
@@ -226,20 +292,23 @@ function setupModalListeners() {
         const car = carData.find(c => c.id === carId);
         if (car) populateModal(car, modal);
     });
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-    }
 }
 
-// 4. Populate Modal Dynamic Content Structure
+// ==========================================================================
+// 6. Populate Modal Content and Dynamic Actions
+// ==========================================================================
 function populateModal(car, modal) {
+    activeCarForShare = car;
+
     const isSold = car.specs.status.toLowerCase() === 'sold';
+    const isInTransit = car.specs.status.toLowerCase() === 'in transit';
     
+    // Create pre-filled touch friendly WhatsApp action path
     const waBase = "https://wa.me/233540677510?text=";
-    const message = isSold 
-        ? encodeURIComponent(`Hello Ogyafadum Car Imports, I saw that your "${car.title}" from Sweden is sold out. Can you help me source and import a similar vehicle?`)
-        : encodeURIComponent(`Hello Ogyafadum Car Imports, I am highly interested in buying the "${car.title}" (ID: ${car.id}) currently available in your showroom.`);
+    const messageText = isSold 
+        ? `Hello Ogyafadum Car Imports, I saw that your "${car.title}" from Sweden is sold out. Can you help me source and import a similar vehicle?`
+        : `Hello Ogyafadum Car Imports, I am highly interested in buying the "${car.title}" (ID: ${car.id}) currently available in your showroom.`;
+    const messageEncoded = encodeURIComponent(messageText);
 
     const modalImg = document.getElementById('modalImg');
     if (modalImg) {
@@ -248,6 +317,9 @@ function populateModal(car, modal) {
     
     const modalTitle = document.getElementById('modalTitle');
     if (modalTitle) modalTitle.innerText = car.title;
+
+    const modalBadge = document.getElementById('modalBadge');
+    if (modalBadge) modalBadge.innerText = car.badge;
 
     const modalDesc = document.getElementById('modalDesc');
     if (modalDesc) modalDesc.innerText = car.desc;
@@ -264,20 +336,107 @@ function populateModal(car, modal) {
     const specStatus = document.getElementById('specStatus');
     if (specStatus) {
         specStatus.innerText = car.specs.status;
-        specStatus.className = isSold ? 'modal-status status-sold' : 'modal-status status-available';
+        
+        let statusStyle = 'modal-status status-available';
+        if (isSold) {
+            statusStyle = 'modal-status status-sold';
+        } else if (isInTransit) {
+            statusStyle = 'modal-status status-transit';
+        }
+        specStatus.className = statusStyle;
     }
 
-    const waLink = document.getElementById('whatsappBtn') || modal.querySelector('.btn-whatsapp');
+    const waLink = document.getElementById('whatsappBtn');
     if (waLink) {
-        waLink.href = waBase + message;
+        waLink.href = waBase + messageEncoded;
     }
 
+    // Set share direct URL parameter history block
+    const shareUrl = `${window.location.origin}${window.location.pathname}?car=${car.id}`;
+    window.history.pushState({ carId: car.id }, '', shareUrl);
+
+    // Open active model with body locking
     modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 function closeModal(event) {
     const modal = document.getElementById('carModal');
     if (modal) {
         modal.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        // Remove deep link path parameter gracefully
+        window.history.pushState(null, '', window.location.pathname);
+    }
+}
+
+// ==========================================================================
+// 7. Direct Share Link Copier Engine (with tactile UI feedback)
+// ==========================================================================
+function setupShareButton() {
+    const shareBtn = document.getElementById('shareBtn');
+    const shareBtnText = document.getElementById('shareBtnText');
+    
+    if (!shareBtn || !shareBtnText) return;
+
+    shareBtn.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        if (!activeCarForShare) return;
+
+        const shareUrl = `${window.location.origin}${window.location.pathname}?car=${activeCarForShare.id}`;
+        
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            
+            // Toggle copy visual icons
+            const copyIcon = shareBtn.querySelector('.copy-icon');
+            const checkIcon = shareBtn.querySelector('.check-icon');
+            
+            if (copyIcon && checkIcon) {
+                copyIcon.classList.add('hidden');
+                checkIcon.classList.remove('hidden');
+            }
+
+            // Change direct feedback texts
+            shareBtnText.innerText = "Link Copied!";
+            shareBtn.style.borderColor = "#10b981";
+            shareBtn.style.color = "#10b981";
+            shareBtn.style.backgroundColor = "rgba(16, 185, 129, 0.05)";
+
+            // Revert state delay
+            setTimeout(() => {
+                if (copyIcon && checkIcon) {
+                    copyIcon.classList.remove('hidden');
+                    checkIcon.classList.add('hidden');
+                }
+                shareBtnText.innerText = "Copy Share Link";
+                shareBtn.style.borderColor = "";
+                shareBtn.style.color = "";
+                shareBtn.style.backgroundColor = "";
+            }, 2500);
+
+        } catch (err) {
+            console.error('Failed to copy active share link path.', err);
+        }
+    });
+}
+
+// ==========================================================================
+// 8. Deep Linking Launcher (Loads specific details on URL match query)
+// ==========================================================================
+function setupDeepLinking() {
+    const params = new URLSearchParams(window.location.search);
+    const carId = params.get('car');
+    
+    if (carId) {
+        const car = carData.find(c => c.id === carId);
+        const modal = document.getElementById('carModal');
+        if (car && modal) {
+            // Short delay to ensure browser rendering complete before trigger popups
+            setTimeout(() => {
+                populateModal(car, modal);
+            }, 300);
+        }
     }
 }
