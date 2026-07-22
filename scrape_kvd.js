@@ -44,7 +44,7 @@ async function scrapeCar() {
     const args = process.argv.slice(2);
     if (args.length === 0) {
         console.error("Please provide a valid kvd.se car detail page URL.");
-        console.error("Usage: node scrape_kvd.js <URL> [replace_index]");
+        console.error("Usage: node scrape_kvd.js <URL> [replace_index] [image_limit]");
         process.exit(1);
     }
     
@@ -170,12 +170,26 @@ async function scrapeCar() {
         
         // Determine mode (Replace or Add) and IDs/Plates
         let replaceIndex = null;
+        let imageLimit = 15; // Default limit to prevent downloading excessive images
+
         if (args.length > 1) {
             const idxParsed = parseInt(args[1], 10);
             if (!isNaN(idxParsed) && idxParsed > 0) {
                 replaceIndex = idxParsed;
             } else {
                 console.warn(`⚠️ Warning: Second argument "${args[1]}" is not a valid 1-based index. Proceeding with adding a new entry instead.`);
+            }
+        }
+        
+        if (args.length > 2) {
+            const limitArg = args[2].toLowerCase();
+            if (limitArg === 'all' || limitArg === '0' || limitArg === 'none') {
+                imageLimit = null; // No limit
+            } else {
+                const parsedLimit = parseInt(limitArg, 10);
+                if (!isNaN(parsedLimit) && parsedLimit > 0) {
+                    imageLimit = parsedLimit;
+                }
             }
         }
         
@@ -198,11 +212,11 @@ async function scrapeCar() {
             
             // Clean up and delete any local image assets belonging to the replaced vehicle
             const assetsDir = path.resolve('assets');
-            const assetPathRegex = /"\/assets\/([^"]+)"|'\/assets\/([^']+)'/g;
+            const assetPathRegex = /(?:["']\/?assets\/([^"']+)["'])/g;
             let pathMatch;
             const deletedFiles = [];
             while ((pathMatch = assetPathRegex.exec(existingObj.content)) !== null) {
-                const filename = pathMatch[1] || pathMatch[2];
+                const filename = pathMatch[1];
                 if (filename) {
                     const fullPath = path.join(assetsDir, filename);
                     if (fs.existsSync(fullPath)) {
@@ -241,12 +255,36 @@ async function scrapeCar() {
         const formattedMileage = mileageVal.toLocaleString('sv-SE') + " mil";
         const desc = `Sourced directly from Sweden. Exceptionally maintained ${brand} with a fully documented ${formattedMileage} odometer reading and premium Swedish executive specifications.`;
 
-        // 4. Download images (up to 4)
-        console.log(`[3/5] Downloading vehicle images to /assets...`);
-        const imageUrls = vehicleData.image || [];
-        if (imageUrls.length === 0) {
+        // 4. Download images (extract as many as possible)
+        console.log(`[3/5] Extracting all vehicle images from metadata & HTML...`);
+        let rawImageUrls = [];
+        
+        if (Array.isArray(vehicleData.image)) {
+            rawImageUrls = vehicleData.image.map(img => typeof img === 'string' ? img : (img.contentUrl || img.url || '')).filter(Boolean);
+        } else if (typeof vehicleData.image === 'string') {
+            rawImageUrls = [vehicleData.image];
+        } else if (vehicleData.image && typeof vehicleData.image === 'object') {
+            const urlStr = vehicleData.image.contentUrl || vehicleData.image.url || '';
+            if (urlStr) rawImageUrls = [urlStr];
+        }
+
+        // Also search page HTML for additional high-res imgix/kvd image URLs
+        const htmlImgMatches = html.match(/https?:\/\/[^"'\s\)]+?\.(?:jpg|jpeg|png|webp)/gi) || [];
+        const cdnImages = htmlImgMatches.filter(u => u.includes('kvdbil-images') || u.includes('kvd.se') || u.includes('imgix'));
+        cdnImages.forEach(u => {
+            if (!rawImageUrls.includes(u)) {
+                rawImageUrls.push(u);
+            }
+        });
+
+        if (rawImageUrls.length === 0) {
             console.warn("No images found in the metadata. Using high-res fallback placeholders.");
-            imageUrls.push("https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80");
+            rawImageUrls.push("https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80");
+        }
+        
+        if (imageLimit !== null && rawImageUrls.length > imageLimit) {
+            console.log(`[INFO] Limiting scraped images to ${imageLimit} (Found ${rawImageUrls.length} total)`);
+            rawImageUrls = rawImageUrls.slice(0, imageLimit);
         }
         
         // Ensure assets directory exists
@@ -255,30 +293,42 @@ async function scrapeCar() {
             fs.mkdirSync(assetsDir, { recursive: true });
         }
         
-        const imageRoles = ['exterior', 'interior', 'cockpit', 'engine'];
-        const savedImages = {};
+        console.log(`Found ${rawImageUrls.length} image(s). Downloading to /assets...`);
+        const downloadedImages = [];
         
-        for (let i = 0; i < 4; i++) {
-            const role = imageRoles[i];
-            const sourceUrl = imageUrls[i % imageUrls.length];
-            const destFilename = `${newId}-${role}.jpg`;
+        for (let i = 0; i < rawImageUrls.length; i++) {
+            const sourceUrl = rawImageUrls[i];
+            const indexStr = String(i + 1).padStart(2, '0');
+            const destFilename = `${newId}-img-${indexStr}.jpg`;
             const destPath = path.join(assetsDir, destFilename);
-            const clientPath = `/assets/${destFilename}`;
+            const clientPath = `assets/${destFilename}`;
             
-            console.log(` - Downloading ${role} image...`);
+            console.log(` - Downloading image ${i + 1}/${rawImageUrls.length}...`);
             try {
                 const imgRes = await fetch(sourceUrl);
                 if (imgRes.ok) {
                     const arrayBuffer = await imgRes.arrayBuffer();
                     fs.writeFileSync(destPath, Buffer.from(arrayBuffer));
-                    savedImages[role] = clientPath.replace('\/', ''); 
+                    downloadedImages.push(clientPath); 
                 } else {
-                    throw new Error(`HTTP error ${imgRes.status}`);
+                    console.warn(` Failed to download image ${i + 1} (HTTP ${imgRes.status})`);
                 }
             } catch (err) {
-                console.warn(` Failed to download ${role} image. Using fallback URL.`);
+                console.warn(` Failed to download image ${i + 1} (${err.message})`);
             }
         }
+
+        if (downloadedImages.length === 0) {
+            downloadedImages.push("assets/car-025-exterior.jpg");
+        }
+
+        const savedImages = {
+            exterior: downloadedImages[0] || '',
+            interior: downloadedImages[1] || downloadedImages[0] || '',
+            cockpit: downloadedImages[2] || downloadedImages[0] || '',
+            engine: downloadedImages[3] || downloadedImages[0] || '',
+            all: downloadedImages
+        };
         
         // 5. Constructing the new database item
         const newCarObject = {
@@ -291,6 +341,7 @@ async function scrapeCar() {
                 origin: "Sweden 🇸🇪",
                 type: translateFuelType(fuelType),
                 year: year,
+                mileage: formattedMileage,
                 status: "Available",
                 hp: hp,
                 transmission: translateTransmission(transmission),
@@ -306,7 +357,9 @@ async function scrapeCar() {
         console.log(`[5/5] Updating /javascript/script.js database...`);
         const objectStrings = objects.map(o => o.content);
         
-        const formattedEntry = `{\n        id: "${newCarObject.id}",\n        badge: "${newCarObject.badge}",\n        title: "${newCarObject.title}",\n        desc: "${newCarObject.desc}",\n        images: {\n            exterior: "${newCarObject.images.exterior}",\n            interior: "${newCarObject.images.interior}",\n            cockpit: "${newCarObject.images.cockpit}",\n            engine: "${newCarObject.images.engine}"\n        },\n        specs: { origin: "${newCarObject.specs.origin}", type: "${newCarObject.specs.type}", year: "${newCarObject.specs.year}", status: "Available", hp: "${newCarObject.specs.hp}", transmission: "${newCarObject.specs.transmission}", plate: "${newCarObject.specs.plate}" },\n        basePriceGHS: ${newCarObject.basePriceGHS}\n    }`;
+        const formattedAllImages = downloadedImages.map(img => `"${img}"`).join(',\n            ');
+
+        const formattedEntry = `{\n        id: "${newCarObject.id}",\n        badge: "${newCarObject.badge}",\n        title: "${newCarObject.title}",\n        desc: "${newCarObject.desc}",\n        images: {\n            exterior: "${newCarObject.images.exterior}",\n            interior: "${newCarObject.images.interior}",\n            cockpit: "${newCarObject.images.cockpit}",\n            engine: "${newCarObject.images.engine}",\n            all: [\n                ${formattedAllImages}\n            ]\n        },\n        specs: { origin: "${newCarObject.specs.origin}", type: "${newCarObject.specs.type}", year: "${newCarObject.specs.year}", mileage: "${formattedMileage}", status: "Available", hp: "${newCarObject.specs.hp}", transmission: "${newCarObject.specs.transmission}", plate: "${newCarObject.specs.plate}" },\n        basePriceGHS: ${newCarObject.basePriceGHS}\n    }`;
         
         if (replaceIndex !== null) {
             objectStrings[replaceIndex - 1] = formattedEntry;
