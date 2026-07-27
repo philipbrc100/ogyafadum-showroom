@@ -6,6 +6,436 @@
 // ==========================================================================
 const carData = [
     {
+        id: "car-040",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 20 704 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-040-img-01.jpg",
+            interior: "assets/car-040-img-02.jpg",
+            cockpit: "assets/car-040-img-03.jpg",
+            engine: "assets/car-040-img-04.jpg",
+            all: [
+                "assets/car-040-img-01.jpg",
+                "assets/car-040-img-02.jpg",
+                "assets/car-040-img-03.jpg",
+                "assets/car-040-img-04.jpg",
+                "assets/car-040-img-05.jpg",
+                "assets/car-040-img-06.jpg",
+                "assets/car-040-img-07.jpg",
+                "assets/car-040-img-08.jpg",
+                "assets/car-040-img-09.jpg",
+                "assets/car-040-img-10.jpg",
+                "assets/car-040-img-11.jpg",
+                "assets/car-040-img-12.jpg",
+                "assets/car-040-img-13.jpg",
+                "assets/car-040-img-14.jpg",
+                "assets/car-040-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2015", mileage: "20 704 mil", status: "Available", hp: "155 Hk", transmission: "Automatic", plate: "SWE-789" },
+        equipment: ["Panoramic glass ceiling","Towbar","fixed","Reversing camera","GPS","Cruise control","Speed limiter","Luggage hatch (district)","Elstol driver with memory","Cooled glove compartment","Electrically heated side mirrors","ISOFIX mounts rear","ABS brakes","Airbag driver","Airbag passenger front","Anti-cable","AUX input","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Brake assistance","CD-Stereo","Central lock (districted)","Divisible rear seat","Electrical lifts (front and rear)","Euro 6","Cam chain","Folding rear seats","Road computer","Reading lamp","Rails","Power steering","Side airbags","Side impact curtains","Makeup mirror","Start/stop function","Starting barrier","Swedish sold","USB socket"]
+    },
+    {
+        id: "car-039",
+        badge: "Sedan",
+        title: "Toyota Camry",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Camry with a fully documented 20 990 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-039-img-01.jpg",
+            interior: "assets/car-039-img-02.jpg",
+            cockpit: "assets/car-039-img-03.jpg",
+            engine: "assets/car-039-img-04.jpg",
+            all: [
+                "assets/car-039-img-01.jpg",
+                "assets/car-039-img-02.jpg",
+                "assets/car-039-img-03.jpg",
+                "assets/car-039-img-04.jpg",
+                "assets/car-039-img-05.jpg",
+                "assets/car-039-img-06.jpg",
+                "assets/car-039-img-07.jpg",
+                "assets/car-039-img-08.jpg",
+                "assets/car-039-img-09.jpg",
+                "assets/car-039-img-10.jpg",
+                "assets/car-039-img-11.jpg",
+                "assets/car-039-img-12.jpg",
+                "assets/car-039-img-13.jpg",
+                "assets/car-039-img-14.jpg",
+                "assets/car-039-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2024", mileage: "20 990 mil", status: "Available", hp: "218 Hk", transmission: "Automatic", plate: "SWE-126" },
+        equipment: ["ABS brakes","ACC","ACC 2 climate zones","Airbag driver","Airbag passenger front","Android Auto","Anti-cable","Apple CarPlay","Auto brake","Dazzling inner-back mirror","Shutdownable airbag passenger","Reversing camera","Backstart help","Luggage room mat","Children's lock","Hands-free connection","Brake assistance","Central lock (districted)","Divisible rear seat","Digital Radio (DAB)","Fog light up front","Electrical lifts (front and rear)","Elin retractable side mirrors","Electric chair driver","Elstol passenger","Electrically heated windshield","Electrically heated side mirrors","Euro 6","Speed limiter","Adaptive cruise control","Folding rear seats","Road computer","GPS","Full-light assistance","ISOFIX mounts rear","Keyless","Fully dressed leather seats","Cooled glove compartment","Driver Assistance","LED Headlights","Light sensor","Reading lamp","Multifunction steering wheel","Parking sensor front","Rain sensor","Spare wheel","Power steering","Side airbags","Side impact curtains","Sign recognition","Makeup mirror","Start/stop function","Starting barrier","Theft alarm","Seat heating (front)","Touch/Touchscreen","USB socket","Outer temperature gauge"]
+    },
+    {
+        id: "car-038",
+        badge: "Kombi",
+        title: "Toyota Corolla",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Corolla with a fully documented 7 100 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-038-img-01.jpg",
+            interior: "assets/car-038-img-02.jpg",
+            cockpit: "assets/car-038-img-03.jpg",
+            engine: "assets/car-038-img-04.jpg",
+            all: [
+                "assets/car-038-img-01.jpg",
+                "assets/car-038-img-02.jpg",
+                "assets/car-038-img-03.jpg",
+                "assets/car-038-img-04.jpg",
+                "assets/car-038-img-05.jpg",
+                "assets/car-038-img-06.jpg",
+                "assets/car-038-img-07.jpg",
+                "assets/car-038-img-08.jpg",
+                "assets/car-038-img-09.jpg",
+                "assets/car-038-img-10.jpg",
+                "assets/car-038-img-11.jpg",
+                "assets/car-038-img-12.jpg",
+                "assets/car-038-img-13.jpg",
+                "assets/car-038-img-14.jpg",
+                "assets/car-038-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2021", mileage: "7 100 mil", status: "Available", hp: "122 Hk", transmission: "Automatic", plate: "SWE-285" },
+        equipment: ["12V socket","Adaptive cruise control","Airbag front","Aircondition","Antispin","Automatic start/stop","Reversing camera","Bluetooth","Central lock","Dead-Angle Warner","Electric windows","Electric side mirrors","Electric side mirrors","etc. heat","ESC","Cruise control","Filekeeping Assistant","Folding rear seat","Road computer","Full-light assistant","Isofix","Adjustable lumbar support","LED light","Light sensor","Multifunction steering wheel","Keyless start","Radio DAB+","Rain sensor","Side airbags","Sports seats","Takrails","Fatigue Alerts","Heated seats","front","Road sign recognition","Summer tyres on alufälg","Winter tyres on alufälv","Armrest in the middle","Coupé heater","Engine heater","Steering wheel heating","Parking sensor rear","Parking sensor front","Tracking system","Wheel in leather","Apple CarPlay","Android Auto","AUX input","Music streaming","Radio FM","Electric luggage hatch","Partial leather-clad seats"]
+    },
+    {
+        id: "car-037",
+        badge: "Pickup",
+        title: "Toyota HiLux",
+        desc: "Sourced directly from Sweden. Exceptionally maintained HiLux with a fully documented 26 200 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-037-img-01.jpg",
+            interior: "assets/car-037-img-02.jpg",
+            cockpit: "assets/car-037-img-03.jpg",
+            engine: "assets/car-037-img-04.jpg",
+            all: [
+                "assets/car-037-img-01.jpg",
+                "assets/car-037-img-02.jpg",
+                "assets/car-037-img-03.jpg",
+                "assets/car-037-img-04.jpg",
+                "assets/car-037-img-05.jpg",
+                "assets/car-037-img-06.jpg",
+                "assets/car-037-img-07.jpg",
+                "assets/car-037-img-08.jpg",
+                "assets/car-037-img-09.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2019", mileage: "26 200 mil", status: "Available", hp: "150 Hk", transmission: "Automatic", plate: "SWE-782" },
+        equipment: ["Multifunction steering wheel","ABS","Side airbags","Keyless start","Electric side mirrors","etc. heat","Antispin","ESC","Electric seats without memory","Bluetooth","Power steering","Rain sensor","Dark toneed squares","Starting barrier","Airbag front","Isofix","Filekeeping Assistant","Road computer","Aircondition","Cruise control","Heated seats","front","Central lock","Road sign recognition","12V socket","LED light","Air conditioning","Reversing camera","AUX input","CD player","Electric windows"]
+    },
+    {
+        id: "car-036",
+        badge: "Halvkombi 5-dörrar",
+        title: "Toyota Yaris",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Yaris with a fully documented 10 178 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-036-img-01.jpg",
+            interior: "assets/car-036-img-02.jpg",
+            cockpit: "assets/car-036-img-03.jpg",
+            engine: "assets/car-036-img-04.jpg",
+            all: [
+                "assets/car-036-img-01.jpg",
+                "assets/car-036-img-02.jpg",
+                "assets/car-036-img-03.jpg",
+                "assets/car-036-img-04.jpg",
+                "assets/car-036-img-05.jpg",
+                "assets/car-036-img-06.jpg",
+                "assets/car-036-img-07.jpg",
+                "assets/car-036-img-08.jpg",
+                "assets/car-036-img-09.jpg",
+                "assets/car-036-img-10.jpg",
+                "assets/car-036-img-11.jpg",
+                "assets/car-036-img-12.jpg",
+                "assets/car-036-img-13.jpg",
+                "assets/car-036-img-14.jpg",
+                "assets/car-036-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "10 178 mil", status: "Available", hp: "116 Hk", transmission: "Automatic", plate: "SWE-488" },
+        equipment: ["Miracast","ABS brakes","ACC","ACC 2 climate zones","Airbag driver","Airbag passenger front","Acoustic boxes","Anti-cable","Auto brake","Shutdownable airbag passenger","Reversing camera","Backstart help","Children's lock","Brake assistance","Central lock (districted)","Divisible rear seat","Digital Radio (DAB)","Digital meter house","Fog light up front","Electrical lifts (front)","Euro 6","Euro NCAP 5","Cruise control","Folding rear seats","Road computer","Full-light assistance","ISOFIX mounts rear","Cooled glove compartment","Driver Assistance","Reading lamp","Carpets (textile)","Multifunction steering wheel","Emergency call","Steering wheel heating","Rain sensor","Side airbags","Side impact curtains","Sign recognition","Makeup mirror","Starting barrier","Swedish sold","Seat heating (front)","Tinted squares","Fatigue Alerts","USB socket","Outer temperature gauge","Electrical lifts (Front and Rear)","Handbrake (electronic)","Adaptive cruise control","Bluetooth"]
+    },
+    {
+        id: "car-035",
+        badge: "SUV",
+        title: "Toyota RAV4",
+        desc: "Sourced directly from Sweden. Exceptionally maintained RAV4 with a fully documented 12 200 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-035-img-01.jpg",
+            interior: "assets/car-035-img-02.jpg",
+            cockpit: "assets/car-035-img-03.jpg",
+            engine: "assets/car-035-img-04.jpg",
+            all: [
+                "assets/car-035-img-01.jpg",
+                "assets/car-035-img-02.jpg",
+                "assets/car-035-img-03.jpg",
+                "assets/car-035-img-04.jpg",
+                "assets/car-035-img-05.jpg",
+                "assets/car-035-img-06.jpg",
+                "assets/car-035-img-07.jpg",
+                "assets/car-035-img-08.jpg",
+                "assets/car-035-img-09.jpg",
+                "assets/car-035-img-10.jpg",
+                "assets/car-035-img-11.jpg",
+                "assets/car-035-img-12.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2018", mileage: "12 200 mil", status: "Available", hp: "197 Hk", transmission: "Automatic", plate: "SWE-804" },
+        equipment: ["Multifunction steering wheel","ABS","Side airbags","Keyless start","Electric side mirrors","etc. heat","Antispin","ESC","Takrails","Electric seats without memory","Bluetooth","Power steering","Rain sensor","Dark toneed squares","Starting barrier","Airbag front","Isofix","Filekeeping Assistant","Road computer","Parking sensor front","Parking sensor rear","Aircondition","Cruise control","Adaptive cruise control","Steering wheel heating","Radio DAB+","Heated seats","front","Folding rear seat","Central lock","Sports seats","Road sign recognition","12V socket","LED light","Self-blinding inner-back mirror","Electric side mirrors","Adjustable lumbar support","Full-light assistant","Air conditioning","Reversing camera","CD player","Electric windows"]
+    },
+    {
+        id: "car-034",
+        badge: "SUV",
+        title: "Kia Sportage",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Sportage with a fully documented 13 671 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-034-img-01.jpg",
+            interior: "assets/car-034-img-02.jpg",
+            cockpit: "assets/car-034-img-03.jpg",
+            engine: "assets/car-034-img-04.jpg",
+            all: [
+                "assets/car-034-img-01.jpg",
+                "assets/car-034-img-02.jpg",
+                "assets/car-034-img-03.jpg",
+                "assets/car-034-img-04.jpg",
+                "assets/car-034-img-05.jpg",
+                "assets/car-034-img-06.jpg",
+                "assets/car-034-img-07.jpg",
+                "assets/car-034-img-08.jpg",
+                "assets/car-034-img-09.jpg",
+                "assets/car-034-img-10.jpg",
+                "assets/car-034-img-11.jpg",
+                "assets/car-034-img-12.jpg",
+                "assets/car-034-img-13.jpg",
+                "assets/car-034-img-14.jpg",
+                "assets/car-034-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2016", mileage: "13 671 mil", status: "Available", hp: "185 Hk", transmission: "Automatic", plate: "SWE-911" },
+        equipment: ["Complete Service Book","Navigator (GPS)","Reversing camera","Media Stereo","JBL Surround Sound","AUX input","USB","BT-Audio","Mobile phone Bluetooth","ACC Climate Anl. 2 zone","Panorama roof Glass","AWD/4WD Four-wheel drive","Sports/Comfort chairs","Armrest","Leather upholstery","Elstol Driver","Elstol Passenger","Isofix Attachment","Seat Heat Front","Seat Heat Rear","Steering wheel heating","Elhissar Front and Back","Electric Mirrors Elinable","Aut Bybl.Backs Mirror","Electric luggage hatch","Airbag Driver","Airbag Pass.Key wrestle.","Side airbags","ABS Brakes","Panic brakeAssist","Antispin","Lane Assist","File-holding assistance","Collision warning","Dead Angle Warning","Traffic sign info","Power steering","Multi-ratt Leather","RattPaddlar","Aluminum panels","Decoration panel","Road computer","Outer temperature gauge","Cruise control","Remote-controlled C-Lock","Key-Less Entry","Key-Less Start","Rain sensor","Xenon headlights","Fog light","P-Light LED","PDC Park.help Fr/Bak","Tinted Squares"]
+    },
+    {
+        id: "car-033",
+        badge: "SUV",
+        title: "Kia Sorento",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Sorento with a fully documented 24 520 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-033-img-01.jpg",
+            interior: "assets/car-033-img-02.jpg",
+            cockpit: "assets/car-033-img-03.jpg",
+            engine: "assets/car-033-img-04.jpg",
+            all: [
+                "assets/car-033-img-01.jpg",
+                "assets/car-033-img-02.jpg",
+                "assets/car-033-img-03.jpg",
+                "assets/car-033-img-04.jpg",
+                "assets/car-033-img-05.jpg",
+                "assets/car-033-img-06.jpg",
+                "assets/car-033-img-07.jpg",
+                "assets/car-033-img-08.jpg",
+                "assets/car-033-img-09.jpg",
+                "assets/car-033-img-10.jpg",
+                "assets/car-033-img-11.jpg",
+                "assets/car-033-img-12.jpg",
+                "assets/car-033-img-13.jpg",
+                "assets/car-033-img-14.jpg",
+                "assets/car-033-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", mileage: "24 520 mil", status: "Available", hp: "200 Hk", transmission: "Automatic", plate: "SWE-305" },
+        equipment: ["Navigation","7-seat","Towbar","fixed","Leather upholstery","ABS brakes","ACC","ACC 2 climate zones","Airbag driver","Airbag passenger front","Anti-cable","AUX input","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Luggage room mat","Children's lock","Hands-free connection","Brake assistance","CD-Stereo","Central lock (districted)","Divisible rear seat","Digital Radio (DAB)","Fog light up front","Electrical lifts (front and rear)","Elin retractable side mirrors","Electric chair driver","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Cruise control","Folding rear seats","Road computer","GPS","ISOFIX mounts rear","Fully dressed leather seats","Reading lamp","Carpets (textile)","Multifunction steering wheel","Parking sensor front","Flat cargo space","Rails","Steering wheel heating","Rain sensor","Spare wheel","Power steering","Side impact curtains","Start/stop function","Starting barrier","Swedish sold","Seat heating (rear)","Seat heating (front)","Tinted squares","Touch/Touchscreen","Heated windscreen wipers","USB socket","Xenon (sip will)","Outer temperature gauge"]
+    },
+    {
+        id: "car-032",
+        badge: "Halvkombi 5-dörrar",
+        title: "Kia Picanto",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Picanto with a fully documented 2 600 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-032-img-01.jpg",
+            interior: "assets/car-032-img-02.jpg",
+            cockpit: "assets/car-032-img-03.jpg",
+            engine: "assets/car-032-img-04.jpg",
+            all: [
+                "assets/car-032-img-01.jpg",
+                "assets/car-032-img-02.jpg",
+                "assets/car-032-img-03.jpg",
+                "assets/car-032-img-04.jpg",
+                "assets/car-032-img-05.jpg",
+                "assets/car-032-img-06.jpg",
+                "assets/car-032-img-07.jpg",
+                "assets/car-032-img-08.jpg",
+                "assets/car-032-img-09.jpg",
+                "assets/car-032-img-10.jpg",
+                "assets/car-032-img-11.jpg",
+                "assets/car-032-img-12.jpg",
+                "assets/car-032-img-13.jpg",
+                "assets/car-032-img-14.jpg",
+                "assets/car-032-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "2 600 mil", status: "Available", hp: "67 Hk", transmission: "Manual", plate: "SWE-182" },
+        equipment: ["ABS brakes","Aircondition","Airbag driver","Airbag passenger front","Anti-cable","Auto brake","AUX input","Shutdownable airbag passenger","Reversing camera","Backstart help","Brake assistance","Central lock","Divisible rear seat","Electrical lifts (front and rear)","Electrically heated side mirrors","Euro 6","Folding rear seats","Road computer","ISOFIX mounts rear","Reading lamp","Light metal rims","Carpets (textile)","Multifunction steering wheel","Spare wheel","Power steering","Side impact curtains","Makeup mirror","Start/stop function","Starting barrier","Theft alarm","Swedish sold","Seat heating (front)","Tinted squares","USB socket","Outer temperature gauge"]
+    },
+    {
+        id: "car-031",
+        badge: "Kombi",
+        title: "Hyundai i40",
+        desc: "Sourced directly from Sweden. Exceptionally maintained i40 with a fully documented 22 720 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-031-img-01.jpg",
+            interior: "assets/car-031-img-02.jpg",
+            cockpit: "assets/car-031-img-03.jpg",
+            engine: "assets/car-031-img-04.jpg",
+            all: [
+                "assets/car-031-img-01.jpg",
+                "assets/car-031-img-02.jpg",
+                "assets/car-031-img-03.jpg",
+                "assets/car-031-img-04.jpg",
+                "assets/car-031-img-05.jpg",
+                "assets/car-031-img-06.jpg",
+                "assets/car-031-img-07.jpg",
+                "assets/car-031-img-08.jpg",
+                "assets/car-031-img-09.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2016", mileage: "22 720 mil", status: "Available", hp: "141 Hk", transmission: "Manual", plate: "SWE-572" },
+        equipment: ["Multifunction steering wheel","ABS","Side airbags","Navigation","Antispin","ESC","Takrails","Electric seats without memory","Automatic start/stop","Bluetooth","Alarm","Rain sensor","Dark toneed squares","Starting barrier","Airbag front","Isofix","Road computer","Parking sensor front","Parking sensor rear","Aircondition","Cruise control","Steering wheel heating","Heated seats","front","Folding rear seat","Central lock","Self-blinding inner-back mirror","Electric side mirrors","Adjustable lumbar support","Air conditioning","Reversing camera","AUX input","Electric windows"]
+    },
+    {
+        id: "car-030",
+        badge: "Familjebuss",
+        title: "Hyundai H-1",
+        desc: "Sourced directly from Sweden. Exceptionally maintained H-1 with a fully documented 20 790 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-030-img-01.jpg",
+            interior: "assets/car-030-img-02.jpg",
+            cockpit: "assets/car-030-img-03.jpg",
+            engine: "assets/car-030-img-04.jpg",
+            all: [
+                "assets/car-030-img-01.jpg",
+                "assets/car-030-img-02.jpg",
+                "assets/car-030-img-03.jpg",
+                "assets/car-030-img-04.jpg",
+                "assets/car-030-img-05.jpg",
+                "assets/car-030-img-06.jpg",
+                "assets/car-030-img-07.jpg",
+                "assets/car-030-img-08.jpg",
+                "assets/car-030-img-09.jpg",
+                "assets/car-030-img-10.jpg",
+                "assets/car-030-img-11.jpg",
+                "assets/car-030-img-12.jpg",
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2016", mileage: "20 790 mil", status: "Available", hp: "170 Hk", transmission: "Automatic", plate: "SWE-493" },
+        equipment: ["ABS","Electric side mirrors","etc. heat","ESC","Bluetooth","Power steering","Alarm","Starting barrier","Airbag front","Isofix","Road computer","Aircondition","Cruise control","Steering wheel heating","Heated seats","front","Folding rear seat","Central lock","Dark toneed squares","Electric side mirrors","Air conditioning","AUX input","Electric windows"]
+    },
+    {
+        id: "car-029",
+        badge: "Skåpbil",
+        title: "Mercedes-Benz Maxi Sprinter",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Maxi with a fully documented 17 800 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-029-img-01.jpg",
+            interior: "assets/car-029-img-02.jpg",
+            cockpit: "assets/car-029-img-03.jpg",
+            engine: "assets/car-029-img-04.jpg",
+            all: [
+                "assets/car-029-img-01.jpg",
+                "assets/car-029-img-02.jpg",
+                "assets/car-029-img-03.jpg",
+                "assets/car-029-img-04.jpg",
+                "assets/car-029-img-05.jpg",
+                "assets/car-029-img-06.jpg",
+                "assets/car-029-img-07.jpg",
+                "assets/car-029-img-08.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2022", mileage: "17 800 mil", status: "Available", hp: "150 Hk", transmission: "Manual", plate: "SWE-125" },
+        equipment: ["ABS brakes","Airbag driver","Anti-cable","Dazzling inner-back mirror","Backstart help","Children's lock","Central lock (districted)","Electrical lifts (front)","Euro 6","Road computer","Keyless","Keyless Start","Driver Assistance","Reading lamp","Emergency call","Power steering","Starting barrier","Outer temperature gauge"]
+    },
+    {
+        id: "car-028",
+        badge: "Halvkombi 5-dörrar",
+        title: "Mazda CX-3",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CX-3 with a fully documented 10 610 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-028-img-01.jpg",
+            interior: "assets/car-028-img-02.jpg",
+            cockpit: "assets/car-028-img-03.jpg",
+            engine: "assets/car-028-img-04.jpg",
+            all: [
+                "assets/car-028-img-01.jpg",
+                "assets/car-028-img-02.jpg",
+                "assets/car-028-img-03.jpg",
+                "assets/car-028-img-04.jpg",
+                "assets/car-028-img-05.jpg",
+                "assets/car-028-img-06.jpg",
+                "assets/car-028-img-07.jpg",
+                "assets/car-028-img-08.jpg",
+                "assets/car-028-img-09.jpg",
+                "assets/car-028-img-10.jpg",
+                "assets/car-028-img-11.jpg",
+                "assets/car-028-img-12.jpg",
+                "assets/car-028-img-13.jpg",
+                "assets/car-028-img-14.jpg",
+                "assets/car-028-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", mileage: "10 610 mil", status: "Available", hp: "150 Hk", transmission: "Automatic", plate: "SWE-295" },
+        equipment: ["Sound system (BOSE)","Reversing camera","Parking sensor rear","Steering wheel heating","Fully dressed leather seats","ACC 2 climate zones","Auto brake","Hands-free connection","Divisible rear seat","Digital Radio (DAB)","Dead Angle Warning","Electrical lifts (front and rear)","Elin retractable side mirrors","Adaptive cruise control","Folding rear seats","ISOFIX mounts rear","Keyless","Driver Assistance","Multifunction steering wheel","Start/stop function","Seat heating (front)","Tinted squares","Touch/Touchscreen","USB socket"]
+    },
+    {
+        id: "car-027",
+        badge: "Halvkombi 5-dörrar",
+        title: "Toyota Aygo",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Aygo with a fully documented 12 800 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-027-img-01.jpg",
+            interior: "assets/car-027-img-02.jpg",
+            cockpit: "assets/car-027-img-03.jpg",
+            engine: "assets/car-027-img-04.jpg",
+            all: [
+                "assets/car-027-img-01.jpg",
+                "assets/car-027-img-02.jpg",
+                "assets/car-027-img-03.jpg",
+                "assets/car-027-img-04.jpg",
+                "assets/car-027-img-05.jpg",
+                "assets/car-027-img-06.jpg",
+                "assets/car-027-img-07.jpg",
+                "assets/car-027-img-08.jpg",
+                "assets/car-027-img-09.jpg",
+                "assets/car-027-img-10.jpg",
+                "assets/car-027-img-11.jpg",
+                "assets/car-027-img-12.jpg",
+                "assets/car-027-img-13.jpg",
+                "assets/car-027-img-14.jpg",
+                "assets/car-027-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2014", mileage: "12 800 mil", status: "Available", hp: "68 Hk", transmission: "Manual", plate: "SWE-361" },
+        equipment: ["ABS","Antispin","ESC","Bluetooth","Power steering","Dark toneed squares","Starting barrier","Airbag front","Isofix","Road computer","Aircondition","Folding rear seat","Central lock","12V socket","Adaptive headlights","Air conditioning","CD player","Electric windows"]
+    },
+    {
+        id: "car-026",
+        badge: "Halvkombi 5-dörrar",
+        title: "Toyota Aygo",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Aygo with a fully documented 5 790 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-026-img-01.jpg",
+            interior: "assets/car-026-img-02.jpg",
+            cockpit: "assets/car-026-img-03.jpg",
+            engine: "assets/car-026-img-04.jpg",
+            all: [
+                "assets/car-026-img-01.jpg",
+                "assets/car-026-img-02.jpg",
+                "assets/car-026-img-03.jpg",
+                "assets/car-026-img-04.jpg",
+                "assets/car-026-img-05.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "5 790 mil", status: "Available", hp: "72 Hk", transmission: "Manual", plate: "SWE-232" },
+        equipment: ["Multifunction steering wheel","ABS","Side airbags","Electric side mirrors","Antispin","ESC","Bluetooth","Power steering","Starting barrier","Airbag front","Isofix","Filekeeping Assistant","Road computer","Aircondition","Heated seats front","Folding rear seat","Central lock","12V socket","Air conditioning","Reversing camera","AUX input","Electric windows"]
+    },
+    {
         id: "car-025",
         badge: "Halvkombi 5-dörrar",
         title: "Nissan Micra",
