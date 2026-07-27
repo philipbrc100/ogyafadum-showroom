@@ -6,99 +6,10 @@
 // ==========================================================================
 const carData = [
     {
-        id: "car-028",
-        badge: "Hybrid Estate",
-        title: "Toyota Corolla 1.8 Hybrid Touring Sports (140hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 2 001 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-028-img-01.jpg",
-            interior: "assets/car-028-img-02.jpg",
-            cockpit: "assets/car-028-img-03.jpg",
-            engine: "assets/car-028-img-04.jpg",
-            all: [
-                "assets/car-028-img-01.jpg",
-            "assets/car-028-img-02.jpg",
-            "assets/car-028-img-03.jpg",
-            "assets/car-028-img-04.jpg",
-            "assets/car-028-img-05.jpg",
-            "assets/car-028-img-06.jpg",
-            "assets/car-028-img-07.jpg",
-            "assets/car-028-img-08.jpg",
-            "assets/car-028-img-09.jpg",
-            "assets/car-028-img-10.jpg",
-            "assets/car-028-img-11.jpg",
-            "assets/car-028-img-12.jpg",
-            "assets/car-028-img-13.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2023", mileage: "2 001 mil", status: "Available", hp: "98 hp", transmission: "Automatic", plate: "KVD-344" },
-        basePriceGHS: 395000
-    },
-    {
-        id: "car-027",
-        badge: "Hybrid SUV",
-        title: "Toyota RAV4 2.5 HSD AWD (222hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 18 823 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-027-img-01.jpg",
-            interior: "assets/car-027-img-02.jpg",
-            cockpit: "assets/car-027-img-03.jpg",
-            engine: "assets/car-027-img-04.jpg",
-            all: [
-                "assets/car-027-img-01.jpg",
-            "assets/car-027-img-02.jpg",
-            "assets/car-027-img-03.jpg",
-            "assets/car-027-img-04.jpg",
-            "assets/car-027-img-05.jpg",
-            "assets/car-027-img-06.jpg",
-            "assets/car-027-img-07.jpg",
-            "assets/car-027-img-08.jpg",
-            "assets/car-027-img-09.jpg",
-            "assets/car-027-img-10.jpg",
-            "assets/car-027-img-11.jpg",
-            "assets/car-027-img-12.jpg",
-            "assets/car-027-img-13.jpg",
-            "assets/car-027-img-14.jpg",
-            "assets/car-027-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2023", mileage: "18 823 mil", status: "Available", hp: "178 hp", transmission: "Automatic", plate: "KVD-590" },
-        basePriceGHS: 315000
-    },
-    {
-        id: "car-026",
-        badge: "Premium Sedan",
-        title: "Toyota Yaris 1.33 5dr (100hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 5 093 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-026-img-01.jpg",
-            interior: "assets/car-026-img-02.jpg",
-            cockpit: "assets/car-026-img-03.jpg",
-            engine: "assets/car-026-img-04.jpg",
-            all: [
-                "assets/car-026-img-01.jpg",
-            "assets/car-026-img-02.jpg",
-            "assets/car-026-img-03.jpg",
-            "assets/car-026-img-04.jpg",
-            "assets/car-026-img-05.jpg",
-            "assets/car-026-img-06.jpg",
-            "assets/car-026-img-07.jpg",
-            "assets/car-026-img-08.jpg",
-            "assets/car-026-img-09.jpg",
-            "assets/car-026-img-10.jpg",
-            "assets/car-026-img-11.jpg",
-            "assets/car-026-img-12.jpg",
-            "assets/car-026-img-13.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2016", mileage: "5 093 mil", status: "Available", hp: "99 hp", transmission: "Manual", plate: "KVD-408" },
-        basePriceGHS: 255000
-    },
-    {
         id: "car-025",
-        badge: "Premium Sedan",
-        title: "Toyota Aygo 1.0 5dr (72hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 2 619 mil odometer reading and premium Swedish executive specifications.",
+        badge: "Halvkombi 5-dörrar",
+        title: "Nissan Micra",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Micra with a fully documented 5 200 mil odometer reading and premium Swedish executive specifications.",
         images: {
             exterior: "assets/car-025-img-01.jpg",
             interior: "assets/car-025-img-02.jpg",
@@ -106,29 +17,30 @@ const carData = [
             engine: "assets/car-025-img-04.jpg",
             all: [
                 "assets/car-025-img-01.jpg",
-            "assets/car-025-img-02.jpg",
-            "assets/car-025-img-03.jpg",
-            "assets/car-025-img-04.jpg",
-            "assets/car-025-img-05.jpg",
-            "assets/car-025-img-06.jpg",
-            "assets/car-025-img-07.jpg",
-            "assets/car-025-img-08.jpg",
-            "assets/car-025-img-09.jpg",
-            "assets/car-025-img-10.jpg",
-            "assets/car-025-img-11.jpg",
-            "assets/car-025-img-12.jpg",
-            "assets/car-025-img-13.jpg",
-            "assets/car-025-img-14.jpg"
+                "assets/car-025-img-02.jpg",
+                "assets/car-025-img-03.jpg",
+                "assets/car-025-img-04.jpg",
+                "assets/car-025-img-05.jpg",
+                "assets/car-025-img-06.jpg",
+                "assets/car-025-img-07.jpg",
+                "assets/car-025-img-08.jpg",
+                "assets/car-025-img-09.jpg",
+                "assets/car-025-img-10.jpg",
+                "assets/car-025-img-11.jpg",
+                "assets/car-025-img-12.jpg",
+                "assets/car-025-img-13.jpg",
+                "assets/car-025-img-14.jpg",
+                "assets/car-025-img-15.jpg"
             ]
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "2 619 mil", status: "Available", hp: "72 hp", transmission: "Automatic", plate: "KVD-913" },
-        basePriceGHS: 125000
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", mileage: "5 200 mil", status: "Available", hp: "90 Hk", transmission: "Manual", plate: "SWE-693" },
+        equipment: ["Summer tyres on rims","12V socket","Airbag front","Aircondition","Acoustic rear windows","Antispin","Apple CarPlay","AUX input","Bluetooth","Central lock","Digital instrument cluster","Tyre pressure monitoring","Electric windows","Electric side mirrors","ESC","Cruise control","Filekeeping Assistant","Folding rear seat","Road computer","Hands-free connection","Head-up display","Isofix","Air conditioning","Coupé heater","Multifunction steering wheel","Music streaming","Radio FM","Power steering","Side airbags","Heated seats","front","USB-A","Road sign recognition","Rain sensor","Automatic start/stop"]
     },
     {
         id: "car-024",
-        badge: "Hybrid Sedan",
-        title: "Toyota Prius 1.5 Hybrid (78hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Toyota with a fully documented 14 803 mil odometer reading and premium Swedish executive specifications.",
+        badge: "SUV",
+        title: "Nissan X-Trail",
+        desc: "Sourced directly from Sweden. Exceptionally maintained X-Trail with a fully documented 6 990 mil odometer reading and premium Swedish executive specifications.",
         images: {
             exterior: "assets/car-024-img-01.jpg",
             interior: "assets/car-024-img-02.jpg",
@@ -136,27 +48,27 @@ const carData = [
             engine: "assets/car-024-img-04.jpg",
             all: [
                 "assets/car-024-img-01.jpg",
-            "assets/car-024-img-02.jpg",
-            "assets/car-024-img-03.jpg",
-            "assets/car-024-img-04.jpg",
-            "assets/car-024-img-05.jpg",
-            "assets/car-024-img-06.jpg",
-            "assets/car-024-img-07.jpg",
-            "assets/car-024-img-08.jpg",
-            "assets/car-024-img-09.jpg",
-            "assets/car-024-img-10.jpg",
-            "assets/car-024-img-11.jpg",
-            "assets/car-024-img-12.jpg"
+                "assets/car-024-img-02.jpg",
+                "assets/car-024-img-03.jpg",
+                "assets/car-024-img-04.jpg",
+                "assets/car-024-img-05.jpg",
+                "assets/car-024-img-06.jpg",
+                "assets/car-024-img-07.jpg",
+                "assets/car-024-img-08.jpg",
+                "assets/car-024-img-09.jpg",
+                "assets/car-024-img-10.jpg",
+                "assets/car-024-img-11.jpg",
+                "assets/car-024-img-12.jpg"
             ]
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Plug-in Hybrid", year: "2008", mileage: "14 803 mil", status: "Available", hp: "78 hp", transmission: "Automatic", plate: "KVD-198" },
-        basePriceGHS: 115000
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2019", mileage: "6 990 mil", status: "Available", hp: "150 Hk", transmission: "Manual", plate: "SWE-571" },
+        equipment: ["Multifunction steering wheel","ABS","Side airbags","Electric side mirrors","Fatigue Alerts","Antispin","ESC","Takrails","Automatic start/stop","Bluetooth","Power steering","Alarm","Rain sensor","Starting barrier","Airbag front","Isofix","Road computer","Parking sensor front","Parking sensor rear","Aircondition","Cruise control","Radio DAB+","Folding rear seat","Coolable glove compartment","Voice Assistant","Central lock","Light sensor","12V socket","Self-blinding inner-back mirror","Adjustable lumbar support","Air conditioning","AUX input","CD player","Electric windows"]
     },
     {
         id: "car-023",
-        badge: "Premium Sedan",
-        title: "KIA Rio 1.0 T-GDi (100hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained KIA with a fully documented 15 697 mil odometer reading and premium Swedish executive specifications.",
+        badge: "SUV",
+        title: "Nissan X-Trail",
+        desc: "Sourced directly from Sweden. Exceptionally maintained X-Trail with a fully documented 18 486 mil odometer reading and premium Swedish executive specifications.",
         images: {
             exterior: "assets/car-023-img-01.jpg",
             interior: "assets/car-023-img-02.jpg",
@@ -164,28 +76,30 @@ const carData = [
             engine: "assets/car-023-img-04.jpg",
             all: [
                 "assets/car-023-img-01.jpg",
-            "assets/car-023-img-02.jpg",
-            "assets/car-023-img-03.jpg",
-            "assets/car-023-img-04.jpg",
-            "assets/car-023-img-05.jpg",
-            "assets/car-023-img-06.jpg",
-            "assets/car-023-img-07.jpg",
-            "assets/car-023-img-08.jpg",
-            "assets/car-023-img-09.jpg",
-            "assets/car-023-img-10.jpg",
-            "assets/car-023-img-11.jpg",
-            "assets/car-023-img-12.jpg",
-            "assets/car-023-img-13.jpg"
+                "assets/car-023-img-02.jpg",
+                "assets/car-023-img-03.jpg",
+                "assets/car-023-img-04.jpg",
+                "assets/car-023-img-05.jpg",
+                "assets/car-023-img-06.jpg",
+                "assets/car-023-img-07.jpg",
+                "assets/car-023-img-08.jpg",
+                "assets/car-023-img-09.jpg",
+                "assets/car-023-img-10.jpg",
+                "assets/car-023-img-11.jpg",
+                "assets/car-023-img-12.jpg",
+                "assets/car-023-img-13.jpg",
+                "assets/car-023-img-14.jpg",
+                "assets/car-023-img-15.jpg"
             ]
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2021", mileage: "15 697 mil", status: "Available", hp: "100 hp", transmission: "Automatic", plate: "KVD-636" },
-        basePriceGHS: 255000
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", mileage: "18 486 mil", status: "Available", hp: "131 Hk", transmission: "Automatic", plate: "SWE-160" },
+        equipment: ["7-seat","Towbar fixed","360° camera","Reversing camera","Panoramic glass ceiling","Cruise control","Keyless","AUX input","Hands-free connection","Central lock (districted)","Electrical lifts (front and rear)","Electric chair driver","Fully dressed leather seats","Navigation","LED Headlights","Parking sensor front","Seat heating (front)"]
     },
     {
         id: "car-022",
-        badge: "Premium Sedan",
-        title: "KIA Venga 1.6 (126hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained KIA with a fully documented 7 265 mil odometer reading and premium Swedish executive specifications.",
+        badge: "SUV",
+        title: "Nissan Juke",
+        desc: "Sourced directly from Sweden. Exceptionally maintained Juke with a fully documented 13 000 mil odometer reading and premium Swedish executive specifications.",
         images: {
             exterior: "assets/car-022-img-01.jpg",
             interior: "assets/car-022-img-02.jpg",
@@ -193,411 +107,48 @@ const carData = [
             engine: "assets/car-022-img-04.jpg",
             all: [
                 "assets/car-022-img-01.jpg",
-            "assets/car-022-img-02.jpg",
-            "assets/car-022-img-03.jpg",
-            "assets/car-022-img-04.jpg",
-            "assets/car-022-img-05.jpg",
-            "assets/car-022-img-06.jpg",
-            "assets/car-022-img-07.jpg",
-            "assets/car-022-img-08.jpg",
-            "assets/car-022-img-09.jpg",
-            "assets/car-022-img-10.jpg",
-            "assets/car-022-img-11.jpg",
-            "assets/car-022-img-12.jpg"
+                "assets/car-022-img-02.jpg",
+                "assets/car-022-img-03.jpg",
+                "assets/car-022-img-04.jpg",
+                "assets/car-022-img-05.jpg",
+                "assets/car-022-img-06.jpg"
             ]
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2018", mileage: "7 265 mil", status: "Available", hp: "124 hp", transmission: "Automatic", plate: "KVD-895" },
-        basePriceGHS: 255000
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2010", mileage: "13 000 mil", status: "Available", hp: "117 Hk", transmission: "Manual", plate: "SWE-432" },
+        equipment: ["Front wheel drive","ABS","Side airbags","ESC","Power steering","Starting barrier","Airbag front","Isofix","Road computer","Aircondition","Folding rear seat","Heated front window","Central lock","12V socket","Self-blinding inner-back mirror","Air conditioning","AUX input","CD player","Electric windows"]
     },
     {
-        id: "car-001",
-        badge: "Premium SUV",
-        title: "KIA Stonic 1.0 T-GDi (120hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained KIA with a fully documented 4 735 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-001-img-01.jpg",
-            interior: "assets/car-001-img-02.jpg",
-            cockpit: "assets/car-001-img-03.jpg",
-            engine: "assets/car-001-img-04.jpg",
-            all: [
-                "assets/car-001-img-01.jpg",
-            "assets/car-001-img-02.jpg",
-            "assets/car-001-img-03.jpg",
-            "assets/car-001-img-04.jpg",
-            "assets/car-001-img-05.jpg",
-            "assets/car-001-img-06.jpg",
-            "assets/car-001-img-07.jpg",
-            "assets/car-001-img-08.jpg",
-            "assets/car-001-img-09.jpg",
-            "assets/car-001-img-10.jpg",
-            "assets/car-001-img-11.jpg",
-            "assets/car-001-img-12.jpg",
-            "assets/car-001-img-13.jpg",
-            "assets/car-001-img-14.jpg",
-            "assets/car-001-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "4 735 mil", status: "Available", hp: "120 hp", transmission: "Automatic", plate: "SXC-901" },
-        basePriceGHS: 225000
-    },
-    {
-        id: "car-040",
+        id: "car-021",
         badge: "Premium SUV",
         title: "Nissan Qashqai 1.2 (115hk)",
         desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 8 415 mil odometer reading and premium Swedish executive specifications.",
         images: {
-            exterior: "assets/car-040-img-01.jpg",
-            interior: "assets/car-040-img-02.jpg",
-            cockpit: "assets/car-040-img-03.jpg",
-            engine: "assets/car-040-img-04.jpg",
+            exterior: "assets/car-021-img-01.jpg",
+            interior: "assets/car-021-img-02.jpg",
+            cockpit: "assets/car-021-img-03.jpg",
+            engine: "assets/car-021-img-04.jpg",
             all: [
-                "assets/car-040-img-01.jpg",
-            "assets/car-040-img-02.jpg",
-            "assets/car-040-img-03.jpg",
-            "assets/car-040-img-04.jpg",
-            "assets/car-040-img-05.jpg",
-            "assets/car-040-img-06.jpg",
-            "assets/car-040-img-07.jpg",
-            "assets/car-040-img-08.jpg",
-            "assets/car-040-img-09.jpg",
-            "assets/car-040-img-10.jpg",
-            "assets/car-040-img-11.jpg",
-            "assets/car-040-img-12.jpg",
-            "assets/car-040-img-13.jpg",
-            "assets/car-040-img-14.jpg",
-            "assets/car-040-img-15.jpg"
+                "assets/car-021-img-01.jpg",
+            "assets/car-021-img-02.jpg",
+            "assets/car-021-img-03.jpg",
+            "assets/car-021-img-04.jpg",
+            "assets/car-021-img-05.jpg",
+            "assets/car-021-img-06.jpg",
+            "assets/car-021-img-07.jpg",
+            "assets/car-021-img-08.jpg",
+            "assets/car-021-img-09.jpg",
+            "assets/car-021-img-10.jpg",
+            "assets/car-021-img-11.jpg",
+            "assets/car-021-img-12.jpg",
+            "assets/car-021-img-13.jpg",
+            "assets/car-021-img-14.jpg",
+            "assets/car-021-img-15.jpg"
             ]
         },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", mileage: "8 415 mil", status: "Available", hp: "116 hp", transmission: "Automatic", plate: "KVD-215" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-039",
-        badge: "Premium SUV",
-        title: "Nissan X-trail 1.3 DIG-T 2WD (160hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Nissan with a fully documented 6 894 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-039-img-01.jpg",
-            interior: "assets/car-039-img-02.jpg",
-            cockpit: "assets/car-039-img-03.jpg",
-            engine: "assets/car-039-img-04.jpg",
-            all: [
-                "assets/car-039-img-01.jpg",
-            "assets/car-039-img-02.jpg",
-            "assets/car-039-img-03.jpg",
-            "assets/car-039-img-04.jpg",
-            "assets/car-039-img-05.jpg",
-            "assets/car-039-img-06.jpg",
-            "assets/car-039-img-07.jpg",
-            "assets/car-039-img-08.jpg",
-            "assets/car-039-img-09.jpg",
-            "assets/car-039-img-10.jpg",
-            "assets/car-039-img-11.jpg",
-            "assets/car-039-img-12.jpg",
-            "assets/car-039-img-13.jpg",
-            "assets/car-039-img-14.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "6 894 mil", status: "Available", hp: "159 hp", transmission: "Automatic", plate: "KVD-177" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-038",
-        badge: "Premium SUV",
-        title: "Honda CR-V 1 6i-DTEC 2WD (120hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Honda with a fully documented 10 734 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-038-img-01.jpg",
-            interior: "assets/car-038-img-02.jpg",
-            cockpit: "assets/car-038-img-03.jpg",
-            engine: "assets/car-038-img-04.jpg",
-            all: [
-                "assets/car-038-img-01.jpg",
-            "assets/car-038-img-02.jpg",
-            "assets/car-038-img-03.jpg",
-            "assets/car-038-img-04.jpg",
-            "assets/car-038-img-05.jpg",
-            "assets/car-038-img-06.jpg",
-            "assets/car-038-img-07.jpg",
-            "assets/car-038-img-08.jpg",
-            "assets/car-038-img-09.jpg",
-            "assets/car-038-img-10.jpg",
-            "assets/car-038-img-11.jpg",
-            "assets/car-038-img-12.jpg",
-            "assets/car-038-img-13.jpg",
-            "assets/car-038-img-14.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2014", mileage: "10 734 mil", status: "Available", hp: "120 hp", transmission: "Manual", plate: "KVD-293" },
-        basePriceGHS: 155000
-    },
-    {
-        id: "car-037",
-        badge: "Premium Sedan",
-        title: "Honda Civic 1.0 i-VTEC 5dr (126hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Honda with a fully documented 7 091 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-037-img-01.jpg",
-            interior: "assets/car-037-img-02.jpg",
-            cockpit: "assets/car-037-img-03.jpg",
-            engine: "assets/car-037-img-04.jpg",
-            all: [
-                "assets/car-037-img-01.jpg",
-            "assets/car-037-img-02.jpg",
-            "assets/car-037-img-03.jpg",
-            "assets/car-037-img-04.jpg",
-            "assets/car-037-img-05.jpg",
-            "assets/car-037-img-06.jpg",
-            "assets/car-037-img-07.jpg",
-            "assets/car-037-img-08.jpg",
-            "assets/car-037-img-09.jpg",
-            "assets/car-037-img-10.jpg",
-            "assets/car-037-img-11.jpg",
-            "assets/car-037-img-12.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", mileage: "7 091 mil", status: "Available", hp: "129 hp", transmission: "Manual", plate: "KVD-415" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-036",
-        badge: "Premium SUV",
-        title: "Audi Q3 40 TDI quattro (200hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 5 648 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-036-img-01.jpg",
-            interior: "assets/car-036-img-02.jpg",
-            cockpit: "assets/car-036-img-03.jpg",
-            engine: "assets/car-036-img-04.jpg",
-            all: [
-                "assets/car-036-img-01.jpg",
-            "assets/car-036-img-02.jpg",
-            "assets/car-036-img-03.jpg",
-            "assets/car-036-img-04.jpg",
-            "assets/car-036-img-05.jpg",
-            "assets/car-036-img-06.jpg",
-            "assets/car-036-img-07.jpg",
-            "assets/car-036-img-08.jpg",
-            "assets/car-036-img-09.jpg",
-            "assets/car-036-img-10.jpg",
-            "assets/car-036-img-11.jpg",
-            "assets/car-036-img-12.jpg",
-            "assets/car-036-img-13.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2023", mileage: "5 648 mil", status: "Available", hp: "200 hp", transmission: "Automatic", plate: "KVD-625" },
-        basePriceGHS: 410000
-    },
-    {
-        id: "car-035",
-        badge: "Premium Sedan",
-        title: "Audi A1 Sportback 30 TFSI (116hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 6 753 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-035-img-01.jpg",
-            interior: "assets/car-035-img-02.jpg",
-            cockpit: "assets/car-035-img-03.jpg",
-            engine: "assets/car-035-img-04.jpg",
-            all: [
-                "assets/car-035-img-01.jpg",
-            "assets/car-035-img-02.jpg",
-            "assets/car-035-img-03.jpg",
-            "assets/car-035-img-04.jpg",
-            "assets/car-035-img-05.jpg",
-            "assets/car-035-img-06.jpg",
-            "assets/car-035-img-07.jpg",
-            "assets/car-035-img-08.jpg",
-            "assets/car-035-img-09.jpg",
-            "assets/car-035-img-10.jpg",
-            "assets/car-035-img-11.jpg",
-            "assets/car-035-img-12.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2019", mileage: "6 753 mil", status: "Available", hp: "116 hp", transmission: "Manual", plate: "KVD-895" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-034",
-        badge: "Premium SUV",
-        title: "Audi Q3 40 TDI quattro (200hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 8 635 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-034-img-01.jpg",
-            interior: "assets/car-034-img-02.jpg",
-            cockpit: "assets/car-034-img-03.jpg",
-            engine: "assets/car-034-img-04.jpg",
-            all: [
-                "assets/car-034-img-01.jpg",
-            "assets/car-034-img-02.jpg",
-            "assets/car-034-img-03.jpg",
-            "assets/car-034-img-04.jpg",
-            "assets/car-034-img-05.jpg",
-            "assets/car-034-img-06.jpg",
-            "assets/car-034-img-07.jpg",
-            "assets/car-034-img-08.jpg",
-            "assets/car-034-img-09.jpg",
-            "assets/car-034-img-10.jpg",
-            "assets/car-034-img-11.jpg",
-            "assets/car-034-img-12.jpg",
-            "assets/car-034-img-13.jpg",
-            "assets/car-034-img-14.jpg",
-            "assets/car-034-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2021", mileage: "8 635 mil", status: "Available", hp: "200 hp", transmission: "Automatic", plate: "KVD-460" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-033",
-        badge: "Premium Wagon",
-        title: "Audi A4 Allroad 2.0 TDI quattro (190hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Audi with a fully documented 16 457 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-033-img-01.jpg",
-            interior: "assets/car-033-img-02.jpg",
-            cockpit: "assets/car-033-img-03.jpg",
-            engine: "assets/car-033-img-04.jpg",
-            all: [
-                "assets/car-033-img-01.jpg",
-            "assets/car-033-img-02.jpg",
-            "assets/car-033-img-03.jpg",
-            "assets/car-033-img-04.jpg",
-            "assets/car-033-img-05.jpg",
-            "assets/car-033-img-06.jpg",
-            "assets/car-033-img-07.jpg",
-            "assets/car-033-img-08.jpg",
-            "assets/car-033-img-09.jpg",
-            "assets/car-033-img-10.jpg",
-            "assets/car-033-img-11.jpg",
-            "assets/car-033-img-12.jpg",
-            "assets/car-033-img-13.jpg",
-            "assets/car-033-img-14.jpg",
-            "assets/car-033-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2017", mileage: "16 457 mil", status: "Available", hp: "190 hp", transmission: "Automatic", plate: "KVD-949" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-032",
-        badge: "Electric Compact",
-        title: "BMW i4 eDrive40, G26 (340hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 4 195 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-032-img-01.jpg",
-            interior: "assets/car-032-img-02.jpg",
-            cockpit: "assets/car-032-img-03.jpg",
-            engine: "assets/car-032-img-04.jpg",
-            all: [
-                "assets/car-032-img-01.jpg",
-            "assets/car-032-img-02.jpg",
-            "assets/car-032-img-03.jpg",
-            "assets/car-032-img-04.jpg",
-            "assets/car-032-img-05.jpg",
-            "assets/car-032-img-06.jpg",
-            "assets/car-032-img-07.jpg",
-            "assets/car-032-img-08.jpg",
-            "assets/car-032-img-09.jpg",
-            "assets/car-032-img-10.jpg",
-            "assets/car-032-img-11.jpg",
-            "assets/car-032-img-12.jpg",
-            "assets/car-032-img-13.jpg",
-            "assets/car-032-img-14.jpg",
-            "assets/car-032-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Electric", year: "2024", mileage: "4 195 mil", status: "Available", hp: "340 hp", transmission: "Automatic", plate: "KVD-948" },
-        basePriceGHS: 495000
-    },
-    {
-        id: "car-031",
-        badge: "Premium Wagon",
-        title: "BMW 520d xDrive Touring, F11 (190hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 12 636 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-031-img-01.jpg",
-            interior: "assets/car-031-img-02.jpg",
-            cockpit: "assets/car-031-img-03.jpg",
-            engine: "assets/car-031-img-04.jpg",
-            all: [
-                "assets/car-031-img-01.jpg",
-            "assets/car-031-img-02.jpg",
-            "assets/car-031-img-03.jpg",
-            "assets/car-031-img-04.jpg",
-            "assets/car-031-img-05.jpg",
-            "assets/car-031-img-06.jpg",
-            "assets/car-031-img-07.jpg",
-            "assets/car-031-img-08.jpg",
-            "assets/car-031-img-09.jpg",
-            "assets/car-031-img-10.jpg",
-            "assets/car-031-img-11.jpg",
-            "assets/car-031-img-12.jpg",
-            "assets/car-031-img-13.jpg",
-            "assets/car-031-img-14.jpg",
-            "assets/car-031-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2017", mileage: "12 636 mil", status: "Available", hp: "190 hp", transmission: "Automatic", plate: "KVD-552" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-030",
-        badge: "Premium SUV",
-        title: "BMW X4 xDrive 20d, F26 (190hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained BMW with a fully documented 10 558 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-030-img-01.jpg",
-            interior: "assets/car-030-img-02.jpg",
-            cockpit: "assets/car-030-img-03.jpg",
-            engine: "assets/car-030-img-04.jpg",
-            all: [
-                "assets/car-030-img-01.jpg",
-            "assets/car-030-img-02.jpg",
-            "assets/car-030-img-03.jpg",
-            "assets/car-030-img-04.jpg",
-            "assets/car-030-img-05.jpg",
-            "assets/car-030-img-06.jpg",
-            "assets/car-030-img-07.jpg",
-            "assets/car-030-img-08.jpg",
-            "assets/car-030-img-09.jpg",
-            "assets/car-030-img-10.jpg",
-            "assets/car-030-img-11.jpg",
-            "assets/car-030-img-12.jpg",
-            "assets/car-030-img-13.jpg",
-            "assets/car-030-img-14.jpg",
-            "assets/car-030-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", mileage: "10 558 mil", status: "Available", hp: "190 hp", transmission: "Automatic", plate: "KVD-379" },
-        basePriceGHS: 255000
-    },
-    {
-        id: "car-029",
-        badge: "Premium Sedan",
-        title: "Mitsubishi Lancer 1.8 Sportback (140hk)",
-        desc: "Sourced directly from Sweden. Exceptionally maintained Mitsubishi with a fully documented 15 298 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-029-img-01.jpg",
-            interior: "assets/car-029-img-02.jpg",
-            cockpit: "assets/car-029-img-03.jpg",
-            engine: "assets/car-029-img-04.jpg",
-            all: [
-                "assets/car-029-img-01.jpg",
-            "assets/car-029-img-02.jpg",
-            "assets/car-029-img-03.jpg",
-            "assets/car-029-img-04.jpg",
-            "assets/car-029-img-05.jpg",
-            "assets/car-029-img-06.jpg",
-            "assets/car-029-img-07.jpg",
-            "assets/car-029-img-08.jpg",
-            "assets/car-029-img-09.jpg",
-            "assets/car-029-img-10.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2011", mileage: "15 298 mil", status: "Available", hp: "140 hp", transmission: "Manual", plate: "KVD-493" },
-        basePriceGHS: 65000
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2017", mileage: "8 415 mil", status: "Available", hp: "116 hp", transmission: "Automatic", plate: "KVD-838" },
+        equipment: ["Steering wheel heating","Reversing camera","Keyless","Airbag driver","Airbag passenger front","Anti-cable","Auto brake","Shutdownable airbag passenger","Children's lock","Bluetooth (Sound streaming)","Hands-free connection","Wireless mobile charger","Driver Mode","Electric mirrors (Retractable)","Cruise control","Digital radio","Brake assistance","Central lock (districted)","Digital meter house","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Folding rear seats","Road computer","ISOFIX mounts rear","Driver Assistance","Light sensor","Reading lamp","ABS brakes","Multifunction steering wheel","Flat cargo space","Rain sensor","Power steering","Side airbags","Side impact curtains","Makeup mirror","Start/stop function","Starting barrier","Theft alarm","Swedish sold","Touch/Touchscreen","Fatigue Alerts","Outer temperature gauge"]
     }
-];
+]
 
 // Active vehicle state
 let activeCar = null;
@@ -836,13 +387,21 @@ function showDetailsView(carId) {
     document.getElementById('specOutputField').innerText = car.specs.hp;
     document.getElementById('specFuelField').innerText = car.specs.type;
     document.getElementById('specTransmissionField').innerText = car.specs.transmission;
-    document.getElementById('specPlateField').innerText = car.specs.plate;
     document.getElementById('specYearField').innerText = car.specs.year;
     
     const specMileageField = document.getElementById('specMileageField');
     if (specMileageField) specMileageField.innerText = car.specs.mileage;
 
-    document.getElementById('specAwdField').innerText = car.title.includes('AWD') || car.title.includes('Quattro') || car.title.includes('4WD') ? 'Yes' : 'No';
+    // document.getElementById('specAwdField').innerText = car.title.includes('AWD') || car.title.includes('Quattro') || car.title.includes('4WD') ? 'Yes' : 'No';
+
+    const specEquipmentField = document.getElementById('specEquipmentField');
+    if (specEquipmentField) {
+        if (car.equipment && Array.isArray(car.equipment) && car.equipment.length > 0) {
+            specEquipmentField.innerHTML = car.equipment.map(item => `<li>${item}</li>`).join('');
+        } else {
+            specEquipmentField.innerHTML = '<li>Data unavailable</li>';
+        }
+    }
 
     // 6. Dynamic Sweden inspection data variations
     const batHealth = document.getElementById('batteryHealthVal');
@@ -863,8 +422,8 @@ function showDetailsView(carId) {
     const addLeather = document.getElementById('addLeather');
     if (addLeather) addLeather.checked = false;
 
-    // 7. Base price assignments
-    calculateDynamicPricing();
+    // 7. Update Whatsapp Link
+    updateWhatsappLink();
 
     // 8. Update window deep-linking URL parameter without jumping layout
     const shareUrl = `${window.location.origin}${window.location.pathname}?car=${car.id}`;
@@ -1097,51 +656,6 @@ function closeLightbox(event) {
     }
 }
 
-// Sourcing Details Dynamic Pricing Calculator (Sweden-Tema cost breakdown)
-function calculateDynamicPricing() {
-    if (!activeCar) return;
-
-    const basePrice = activeCar.basePriceGHS;
-    const freightPrice = 35000; // Flat Ogyafadum shipping/freight slip
-
-    // Check customizer add-on pricing inputs
-    let customizerSum = 0;
-    const ceramicOpt = document.getElementById('addCeramic');
-    if (ceramicOpt && ceramicOpt.checked) customizerSum += 4500;
-    const partsOpt = document.getElementById('addPartsKit');
-    if (partsOpt && partsOpt.checked) customizerSum += 3200;
-    const leatherOpt = document.getElementById('addLeather');
-    if (leatherOpt && leatherOpt.checked) customizerSum += 1800;
-
-    const totalLanding = basePrice + freightPrice + customizerSum;
-
-    // Populate Pricing breakdown labels if they exist in the DOM
-    const sidebarBasePrice = document.getElementById('sidebarBasePrice');
-    if (sidebarBasePrice) sidebarBasePrice.innerText = `GH₵ ${basePrice.toLocaleString()}`;
-    const breakdownBase = document.getElementById('breakdownBase');
-    if (breakdownBase) breakdownBase.innerText = `GH₵ ${basePrice.toLocaleString()}`;
-    const breakdownFreight = document.getElementById('breakdownFreight');
-    if (breakdownFreight) breakdownFreight.innerText = `GH₵ ${freightPrice.toLocaleString()}`;
-    const breakdownCustomizer = document.getElementById('breakdownCustomizer');
-    if (breakdownCustomizer) breakdownCustomizer.innerText = `GH₵ ${customizerSum.toLocaleString()}`;
-    const totalLandingPrice = document.getElementById('totalLandingPrice');
-    if (totalLandingPrice) totalLandingPrice.innerText = `GH₵ ${totalLanding.toLocaleString()}`;
-
-    // Prefill custom WhatsApp action anchor
-    const isSold = activeCar.specs.status.toLowerCase() === 'sold';
-    let waText = "";
-    if (isSold) {
-        waText = `Hello Ogyafadum Car Imports, I see your Sweden-sourced "${activeCar.title}" is currently marked sold. Can you help me source and import a matching unit from Gothenburg auctions?`;
-    } else {
-        waText = `Hello Ogyafadum Car Imports, I am highly interested in securing a sourcing slot for the "${activeCar.title}" (ID: ${activeCar.id}). Please advise on the sourcing and logistics process.`;
-    }
-
-    const waLink = document.getElementById('sidebarWhatsappBtn');
-    if (waLink) {
-        waLink.href = `https://wa.me/233540677510?text=${encodeURIComponent(waText)}`;
-    }
-}
-
 // Swedac Quality Inspection accordion toggle handler
 function toggleAccordion(panelId) {
     const activePanel = document.getElementById(panelId);
@@ -1192,5 +706,28 @@ function setupDeepLinking() {
                 showDetailsView(carId);
             }, 100);
         }
+    }
+}
+
+// Expose functions to global scope for inline HTML handlers
+window.closeLightbox = closeLightbox;
+window.closeModal = closeModal;
+window.navigateImage = navigateImage;
+window.openLightbox = openLightbox;
+window.scrollThumbnails = scrollThumbnails;
+
+function updateWhatsappLink() {
+    if (!activeCar) return;
+    const isSold = activeCar.specs && activeCar.specs.status === 'Sold';
+    let waText = "";
+    if (isSold) {
+        waText = `Hello Ogyafadum Car Imports, I see your Sweden-sourced "${activeCar.title}" is currently marked sold. Can you help me source and import a matching unit from Gothenburg auctions?`;
+    } else {
+        waText = `Hello Ogyafadum Car Imports, I am highly interested in securing a sourcing slot for the "${activeCar.title}" (ID: ${activeCar.id}). Please advise on the sourcing and logistics process.`;
+    }
+
+    const waLink = document.getElementById('sidebarWhatsappBtn');
+    if (waLink) {
+        waLink.href = `https://wa.me/233540677510?text=${encodeURIComponent(waText)}`;
     }
 }

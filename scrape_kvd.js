@@ -70,7 +70,7 @@ async function scrapeCar() {
         const $ = cheerio.load(html);
         
         // 2. Locate JSON-LD Schema
-        console.log(`[2/5] Extracting Schema.org metadata...`);
+        console.log(`[2/5] Extracting Schema.org metadata and equipment...`);
         let vehicleData = null;
         
         $('script[type="application/ld+json"]').each((_, el) => {
@@ -87,6 +87,14 @@ async function scrapeCar() {
         if (!vehicleData) {
             throw new Error("Could not find any Schema.org Vehicle or Product metadata inside the page HTML.");
         }
+
+        const equipments = [];
+        $('li[class*="Equipment__EquipmentItem"]').each((i, el) => {
+            const text = $(el).find('div[class*="Equipment__EquipmentTitleRow"] p').text();
+            if (text) {
+                equipments.push(text.trim());
+            }
+        });
         
         // 3. Extracting and parsing fields
         console.log(`Successfully identified metadata for: ${vehicleData.name}`);
@@ -105,7 +113,6 @@ async function scrapeCar() {
         const sekPrice = parseFloat(vehicleData.offers?.lowPrice || vehicleData.offers?.highPrice || "150000");
         // Realistic premium conversion factor (e.g. 1.45 to GHS with freight built in, then round to premium 5000 interval)
         const rawGhsPrice = sekPrice * 1.45;
-        const basePriceGHS = Math.round((rawGhsPrice + 35000) / 5000) * 5000; // adding freight and rounding
         
         // Find existing database to determine next ID and plate
         const scriptPath = path.resolve('javascript/script.js');
@@ -347,7 +354,7 @@ async function scrapeCar() {
                 transmission: translateTransmission(transmission),
                 plate: plate
             },
-            basePriceGHS: basePriceGHS
+            equipment: equipments
         };
         
         console.log(`[4/5] Formatting database object entry:`);
@@ -358,8 +365,10 @@ async function scrapeCar() {
         const objectStrings = objects.map(o => o.content);
         
         const formattedAllImages = downloadedImages.map(img => `"${img}"`).join(',\n            ');
+        const formattedEquipment = newCarObject.equipment && newCarObject.equipment.length > 0 ? `,\n        equipment: ${JSON.stringify(newCarObject.equipment)}` : '';
+        const specsString = `{ origin: "${newCarObject.specs.origin}", type: "${newCarObject.specs.type}", year: "${newCarObject.specs.year}", mileage: "${formattedMileage}", status: "Available", hp: "${newCarObject.specs.hp}", transmission: "${newCarObject.specs.transmission}", plate: "${newCarObject.specs.plate}" }`;
 
-        const formattedEntry = `{\n        id: "${newCarObject.id}",\n        badge: "${newCarObject.badge}",\n        title: "${newCarObject.title}",\n        desc: "${newCarObject.desc}",\n        images: {\n            exterior: "${newCarObject.images.exterior}",\n            interior: "${newCarObject.images.interior}",\n            cockpit: "${newCarObject.images.cockpit}",\n            engine: "${newCarObject.images.engine}",\n            all: [\n                ${formattedAllImages}\n            ]\n        },\n        specs: { origin: "${newCarObject.specs.origin}", type: "${newCarObject.specs.type}", year: "${newCarObject.specs.year}", mileage: "${formattedMileage}", status: "Available", hp: "${newCarObject.specs.hp}", transmission: "${newCarObject.specs.transmission}", plate: "${newCarObject.specs.plate}" },\n        basePriceGHS: ${newCarObject.basePriceGHS}\n    }`;
+        const formattedEntry = `{\n        id: "${newCarObject.id}",\n        badge: "${newCarObject.badge}",\n        title: "${newCarObject.title}",\n        desc: "${newCarObject.desc}",\n        images: {\n            exterior: "${newCarObject.images.exterior}",\n            interior: "${newCarObject.images.interior}",\n            cockpit: "${newCarObject.images.cockpit}",\n            engine: "${newCarObject.images.engine}",\n            all: [\n                ${formattedAllImages}\n            ]\n        },\n        specs: ${specsString}${formattedEquipment}\n    }`;
         
         if (replaceIndex !== null) {
             objectStrings[replaceIndex - 1] = formattedEntry;
@@ -379,13 +388,11 @@ async function scrapeCar() {
             console.log(`\n🎉 SUCCESS! Fleet item at index ${replaceIndex} has been replaced with: ${newCarObject.title}!`);
             console.log(`- Replaced Sourced ID: ${newCarObject.id}`);
             console.log(`- Mapped License Plate: ${newCarObject.specs.plate}`);
-            console.log(`- Assigned Showroom Price: GH₵ ${newCarObject.basePriceGHS.toLocaleString()}`);
             console.log(`- Images saved successfully inside /assets/`);
         } else {
             console.log(`\n🎉 SUCCESS! ${newCarObject.title} has been added to the fleet!`);
             console.log(`- Sourced ID: ${newCarObject.id}`);
             console.log(`- Mapped License Plate: ${newCarObject.specs.plate}`);
-            console.log(`- Assigned Showroom Price: GH₵ ${newCarObject.basePriceGHS.toLocaleString()}`);
             console.log(`- Images saved successfully inside /assets/`);
         }
         

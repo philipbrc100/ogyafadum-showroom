@@ -2349,3 +2349,25 @@ footer {
         gap: 0.75rem;
     }
 }
+
+.equipment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.equipment-list li {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.specs-groups-container .specs-group-card {
+    grid-column: 1 / -1;
+}
