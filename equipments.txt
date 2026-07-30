@@ -1,14 +1,3 @@
-Panoramic glass ceiling
-Towbar, fixed
-Reversing camera
-GPS
-Cruise control
-Speed limiter
-Luggage hatch (district)
-Elstol driver with memory
-Cooled glove compartment
-Electrically heated side mirrors
-ISOFIX mounts rear
 ABS brakes
 Airbag driver
 Airbag passenger front
@@ -22,18 +11,44 @@ Brake assistance
 CD-Stereo
 Central lock (districted)
 Divisible rear seat
+Fog light up front
 Electrical lifts (front and rear)
+Electrically heated side mirrors
 Euro 6
-Cam chain
+Euro NCAP 5
+Speed limiter
+Cruise control
 Folding rear seats
 Road computer
+ISOFIX mounts rear
+Cooled glove compartment
+Light sensor
 Reading lamp
+Parking sensor front
 Rails
+Rain sensor
 Power steering
 Side airbags
 Side impact curtains
 Makeup mirror
 Start/stop function
 Starting barrier
-Swedish sold
 USB socket
+Touch/Touchscreen
+ACC 2 climate zones
+Seat heating (front)
+Light metal rims
+Central lock
+Reversing camera
+Airbag rear
+Towbar, fixed
+Carpets (rubber)
+ACC
+Outer temperature gauge
+LED Headlights
+Hands-free connection
+Transparency protection
+Towbar, removable/turnable
+Spare wheel
+Clothing (fabric)
+Four-wheel drive
