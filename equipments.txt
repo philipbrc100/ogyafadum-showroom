@@ -1,9 +1,9 @@
 ABS brakes
+ACC
 Airbag driver
 Airbag passenger front
 Anti-cable
 AUX input
-Dazzling inner-back mirror
 Shutdownable airbag passenger
 Backstart help
 Children's lock
@@ -11,44 +11,18 @@ Brake assistance
 CD-Stereo
 Central lock (districted)
 Divisible rear seat
-Fog light up front
 Electrical lifts (front and rear)
-Electrically heated side mirrors
-Euro 6
 Euro NCAP 5
-Speed limiter
 Cruise control
 Folding rear seats
 Road computer
 ISOFIX mounts rear
-Cooled glove compartment
-Light sensor
 Reading lamp
-Parking sensor front
-Rails
-Rain sensor
+Multifunction steering wheel
 Power steering
 Side airbags
 Side impact curtains
-Makeup mirror
-Start/stop function
 Starting barrier
+Swedish sold
 USB socket
-Touch/Touchscreen
-ACC 2 climate zones
-Seat heating (front)
-Light metal rims
-Central lock
-Reversing camera
-Airbag rear
-Towbar, fixed
-Carpets (rubber)
-ACC
 Outer temperature gauge
-LED Headlights
-Hands-free connection
-Transparency protection
-Towbar, removable/turnable
-Spare wheel
-Clothing (fabric)
-Four-wheel drive

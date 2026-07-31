@@ -6,6 +6,65 @@
 // ==========================================================================
 const carData = [
     {
+        id: "car-049",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 19 580 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-049-img-01.jpg",
+            interior: "assets/car-049-img-02.jpg",
+            cockpit: "assets/car-049-img-03.jpg",
+            engine: "assets/car-049-img-04.jpg",
+            all: [
+                "assets/car-049-img-01.jpg",
+                "assets/car-049-img-02.jpg",
+                "assets/car-049-img-03.jpg",
+                "assets/car-049-img-04.jpg",
+                "assets/car-049-img-05.jpg",
+                "assets/car-049-img-06.jpg",
+                "assets/car-049-img-07.jpg",
+                "assets/car-049-img-08.jpg",
+                "assets/car-049-img-09.jpg",
+                "assets/car-049-img-10.jpg",
+                "assets/car-049-img-11.jpg",
+                "assets/car-049-img-12.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2014", mileage: "19 580 mil", status: "Available", hp: "150 Hk", transmission: "Automatic", plate: "SWE-632" },
+        equipment: ["ABS brakes","ACC","Airbag driver","Airbag passenger front","Anti-cable","AUX input","Shutdownable airbag passenger","Backstart help","Children's lock","Brake assistance","CD-Stereo","Central lock (districted)","Divisible rear seat","Electrical lifts (front and rear)","Euro NCAP 5","Cruise control","Folding rear seats","Road computer","ISOFIX mounts rear","Reading lamp","Multifunction steering wheel","Power steering","Side airbags","Side impact curtains","Starting barrier","Swedish sold","USB socket","Outer temperature gauge"]
+    },
+    {
+        id: "car-048",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 20 500 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-048-img-01.jpg",
+            interior: "assets/car-048-img-02.jpg",
+            cockpit: "assets/car-048-img-03.jpg",
+            engine: "assets/car-048-img-04.jpg",
+            all: [
+                "assets/car-048-img-01.jpg",
+                "assets/car-048-img-02.jpg",
+                "assets/car-048-img-03.jpg",
+                "assets/car-048-img-04.jpg",
+                "assets/car-048-img-05.jpg",
+                "assets/car-048-img-06.jpg",
+                "assets/car-048-img-07.jpg",
+                "assets/car-048-img-08.jpg",
+                "assets/car-048-img-09.jpg",
+                "assets/car-048-img-10.jpg",
+                "assets/car-048-img-11.jpg",
+                "assets/car-048-img-12.jpg",
+                "assets/car-048-img-13.jpg",
+                "assets/car-048-img-14.jpg",
+                "assets/car-048-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2014", mileage: "20 500 mil", status: "Available", hp: "188 Hk", transmission: "Automatic", plate: "SWE-465" },
+        equipment: ["12V socket","Airbag front","Aircondition","Antispin","AUX input","Central lock","Electric windows","ESC","Folding rear seat","Road computer","Isofix","Power steering","Side airbags","Takrails","Reversing camera","Cruise control","Armrest in the middle","Radio FM","USB-A","Bluetooth","Multifunction steering wheel","Hands-free connection"]
+    },
+    {
         id: "car-047",
         badge: "SUV",
         title: "Honda CR-V",
