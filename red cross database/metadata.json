@@ -1,0 +1,6 @@
+{
+  "name": "Ghana Red Cross Society Membership Portal",
+  "description": "Official membership dues clearance, volunteer registration across all 16 Ghana regions, and administrative directory portal for the Ghana Red Cross Society.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
