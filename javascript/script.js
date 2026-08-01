@@ -5,6 +5,145 @@
 // 1. Core Vehicle Database Array (20 Premium Fleet)
 // ==========================================================================
 const carData = [
+     {
+        id: "car-044",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 5 820 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-044-img-01.jpg",
+            interior: "assets/car-044-img-02.jpg",
+            cockpit: "assets/car-044-img-03.jpg",
+            engine: "assets/car-044-img-04.jpg",
+            all: [
+                "assets/car-044-img-01.jpg",
+                "assets/car-044-img-02.jpg",
+                "assets/car-044-img-03.jpg",
+                "assets/car-044-img-04.jpg",
+                "assets/car-044-img-05.jpg",
+                "assets/car-044-img-06.jpg",
+                "assets/car-044-img-07.jpg",
+                "assets/car-044-img-08.jpg",
+                "assets/car-044-img-09.jpg",
+                "assets/car-044-img-10.jpg",
+                "assets/car-044-img-11.jpg",
+                "assets/car-044-img-12.jpg",
+                "assets/car-044-img-13.jpg",
+                "assets/car-044-img-14.jpg",
+                "assets/car-044-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2024", mileage: "5 820 mil", status: "Available", hp: "184 Hk", transmission: "Automatic", plate: "SWE-359" },
+        equipment: ["e-HEV Hybrid","E-CVT Aut. transmission","Panoramic glass ceiling","Navigation","Reversing camera","Front & rear parking sensors","Leather steering with heat","Wireless charger","Wireless Apple Carplay","Wireless Andoir Auto","Honda Connect","Tinted squares","Leather upholstery","Adaptive cruise control","Hands-free tailgate","Honda Sensing","LED headlights","Electric chair driver","Keyless Go","Electrically operated tailgate","8 speakers","ABS brakes","ACC","ACC 2 climate zones","Airbag driver","Airbag passenger front","Auto brake","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Hands-free connection","Brake assistance","Central lock (districted)","Divisible rear seat","Digital Radio (DAB)","Digital meter house","Electrical lifts (front and rear)","Elstol passenger","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Folding rear seats","Road computer","GPS","ISOFIX mounts rear","Driver Assistance","Light sensor","Flat cargo space","Rails","Power steering","Side airbags","Side impact curtains","Sign recognition","Start/stop function","Starting barrier","Theft alarm","Seat heating (front)","Touch/Touchscreen","Fatigue Alerts","USB socket","Outer temperature gauge"]
+    },
+     {
+        id: "car-042",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 4 100 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-042-img-01.jpg",
+            interior: "assets/car-042-img-02.jpg",
+            cockpit: "assets/car-042-img-03.jpg",
+            engine: "assets/car-042-img-04.jpg",
+            all: [
+                "assets/car-042-img-01.jpg",
+                "assets/car-042-img-02.jpg",
+                "assets/car-042-img-03.jpg",
+                "assets/car-042-img-04.jpg",
+                "assets/car-042-img-05.jpg",
+                "assets/car-042-img-06.jpg",
+                "assets/car-042-img-07.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2024", mileage: "4 100 mil", status: "Available", hp: "184 Hk", transmission: "Automatic", plate: "SWE-333" },
+        equipment: ["ABS brakes","ACC air conditioning","Airbag driver","Airbag passenger front (closingable)","Android Auto","Anti-cable system","Antispin","Apple CarPlay","Auto brake","AUX input","Reversing camera","Luggage hatch (electric)","Bluetooth hands-free","Central lock (districted)","Divisible rear seat","Dead Angle Warning","Electric window lifts (rears)","Electric window lifts (front)","Elinable Side Mirrors","Electrically operated driver's seat","Adaptive cruise control","File change warning","Road computer","GPS","Handbrake (electronic)","Full-light assistance","Isofix mounts at the rear","Touchscreen","Panorama glass ceiling (Invisible)","Front parking sensors front + rear","Keyless system (Keyless)","Multifunction steering wheel","Light metal rims","LED Headlights","Fully dressed leather seats","Steering wheel heating","Rain sensor","Power steering","Side airbags","Sign Scanning","Theft alarm","Swedish sold","Seat heating front","Winter wheels alloy wheels"]
+    },
+     {
+        id: "car-043",
+        badge: "SUV",
+        title: "Honda HR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained HR-V with a fully documented 6 600 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-043-img-01.jpg",
+            interior: "assets/car-043-img-02.jpg",
+            cockpit: "assets/car-043-img-03.jpg",
+            engine: "assets/car-043-img-04.jpg",
+            all: [
+                "assets/car-043-img-01.jpg",
+                "assets/car-043-img-02.jpg",
+                "assets/car-043-img-03.jpg",
+                "assets/car-043-img-04.jpg",
+                "assets/car-043-img-05.jpg",
+                "assets/car-043-img-06.jpg",
+                "assets/car-043-img-07.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2022", mileage: "6 600 mil", status: "Available", hp: "131 Hk", transmission: "Automatic", plate: "SWE-363" },
+        equipment: ["ABS brakes","ACC air conditioning","Airbag driver","Airbag passenger front (closingable)","Android Auto","Anti-cable system","Antispin","Apple CarPlay","Auto brake","AUX input","Reversing camera","Bluetooth hands-free","Central lock (districted)","Divisible rear seat","Electric window lifts (rears)","Electric window lifts (front)","Elinable Side Mirrors","Adaptive cruise control","File change warning","Road computer","GPS","Handbrake (electronic)","Full-light assistance","Isofix mounts at the rear","Touchscreen","Keyless system (Keyless)","Multifunction steering wheel","Magic Seats Seats Seats","Light metal rims","Clothing (fabric)","Rain sensor","Power steering","Side airbags","Sign Scanning","Seat heating front","Winter Wheel Friction"]
+    },
+     {
+        id: "car-046",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 13 477 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-046-img-01.jpg",
+            interior: "assets/car-046-img-02.jpg",
+            cockpit: "assets/car-046-img-03.jpg",
+            engine: "assets/car-046-img-04.jpg",
+            all: [
+                "assets/car-046-img-01.jpg",
+                "assets/car-046-img-02.jpg",
+                "assets/car-046-img-03.jpg",
+                "assets/car-046-img-04.jpg",
+                "assets/car-046-img-05.jpg",
+                "assets/car-046-img-06.jpg",
+                "assets/car-046-img-07.jpg",
+                "assets/car-046-img-08.jpg",
+                "assets/car-046-img-09.jpg",
+                "assets/car-046-img-10.jpg",
+                "assets/car-046-img-11.jpg",
+                "assets/car-046-img-12.jpg",
+                "assets/car-046-img-13.jpg",
+                "assets/car-046-img-14.jpg",
+                "assets/car-046-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "13 477 mil", status: "Available", hp: "215 Hk", transmission: "Automatic", plate: "SWE-432" },
+        equipment: ["ABS brakes","Four-wheel drive","Anti-cable/Anti-spins","ACC/Climate plant","Airbag driver/Passenger front","Side airbags/Sidock Rock Curtains","Airbag rear","Shutdownable airbag passenger","Keyless/Key-Free Start","Touch/Touchscreen","Bluetooth Hands-free/Music streaming","GPS/Navination","Apple CarPlay/Android Auto","Reversing camera","Front/rear parking sensors","Adaptive cruise control","Clothing (fabric)","Seat heating (front)","Auto brake","AUX input","Dazzling inner-back mirror","Backstart help","Children's lock","Brake assistance","Central lock (districted)","Divisible rear seat","Digital meter house","Elin retractable side mirrors","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Folding rear seats","ISOFIX mounts rear","Cooled glove compartment","Driver Assistance","Multifunction steering wheel","Starting barrier","Heated windscreen wipers","USB socket","Outer temperature gauge","Electrical lifts (front and rear)","Handbrake (electronic)","LED Headlights","Full-light assistance","Fog light up front","Flat cargo space","Rain sensor","Start/stop function","Tinted squares","Switchboard paddles","18\" Light alloy wheels"]
+    },
+    {
+        id: "car-045",
+        badge: "SUV",
+        title: "Honda CR-V",
+        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 7 612 mil odometer reading and premium Swedish executive specifications.",
+        images: {
+            exterior: "assets/car-045-img-01.jpg",
+            interior: "assets/car-045-img-02.jpg",
+            cockpit: "assets/car-045-img-03.jpg",
+            engine: "assets/car-045-img-04.jpg",
+            all: [
+                "assets/car-045-img-01.jpg",
+                "assets/car-045-img-02.jpg",
+                "assets/car-045-img-03.jpg",
+                "assets/car-045-img-04.jpg",
+                "assets/car-045-img-05.jpg",
+                "assets/car-045-img-06.jpg",
+                "assets/car-045-img-07.jpg",
+                "assets/car-045-img-08.jpg",
+                "assets/car-045-img-09.jpg",
+                "assets/car-045-img-10.jpg",
+                "assets/car-045-img-11.jpg",
+                "assets/car-045-img-12.jpg",
+                "assets/car-045-img-13.jpg",
+                "assets/car-045-img-14.jpg",
+                "assets/car-045-img-15.jpg"
+            ]
+        },
+        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "7 612 mil", status: "Available", hp: "215 Hk", transmission: "Automatic", plate: "SWE-287" },
+        equipment: ["Towbar","fixed","ABS brakes","ACC","Airbag driver","Airbag passenger front","Anti-cable","Auto brake","AUX input","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Hands-free connection","Brake assistance","Central lock (districted)","Divisible rear seat","Digital meter house","Elin retractable side mirrors","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Folding rear seats","Road computer","ISOFIX mounts rear","Keyless Keyless Start","Cooled glove compartment","Driver Assistance","Light sensor","Reading lamp","Multifunction steering wheel","Flat cargo space","Spare wheel","Power steering","Side airbags","Side impact curtains","Makeup mirror","Starting barrier","Swedish sold","Heated windscreen wipers","USB socket","Outer temperature gauge"]
+    },
     {
         id: "car-049",
         badge: "SUV",
@@ -94,145 +233,6 @@ const carData = [
         },
         specs: { origin: "Sweden 🇸🇪", type: "Diesel Turbo", year: "2015", mileage: "20 672 mil", status: "Available", hp: "160 Hk", transmission: "Manual", plate: "SWE-667" },
         equipment: ["ABS brakes","Airbag driver","Airbag passenger front","Anti-cable","AUX input","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Brake assistance","CD-Stereo","Central lock (districted)","Divisible rear seat","Fog light up front","Electrical lifts (front and rear)","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Cruise control","Folding rear seats","Road computer","ISOFIX mounts rear","Cooled glove compartment","Light sensor","Reading lamp","Parking sensor front","Rails","Rain sensor","Power steering","Side airbags","Side impact curtains","Makeup mirror","Start/stop function","Starting barrier","USB socket","Touch/Touchscreen","ACC 2 climate zones","Seat heating (front)","Light metal rims","Central lock","Reversing camera","Airbag rear","Towbar","fixed","Carpets (rubber)","ACC","Outer temperature gauge","LED Headlights","Hands-free connection","Transparency protection","Towbar","removable/turnable","Spare wheel","Clothing (fabric)","Four-wheel drive"]
-    },
-    {
-        id: "car-046",
-        badge: "SUV",
-        title: "Honda CR-V",
-        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 13 477 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-046-img-01.jpg",
-            interior: "assets/car-046-img-02.jpg",
-            cockpit: "assets/car-046-img-03.jpg",
-            engine: "assets/car-046-img-04.jpg",
-            all: [
-                "assets/car-046-img-01.jpg",
-                "assets/car-046-img-02.jpg",
-                "assets/car-046-img-03.jpg",
-                "assets/car-046-img-04.jpg",
-                "assets/car-046-img-05.jpg",
-                "assets/car-046-img-06.jpg",
-                "assets/car-046-img-07.jpg",
-                "assets/car-046-img-08.jpg",
-                "assets/car-046-img-09.jpg",
-                "assets/car-046-img-10.jpg",
-                "assets/car-046-img-11.jpg",
-                "assets/car-046-img-12.jpg",
-                "assets/car-046-img-13.jpg",
-                "assets/car-046-img-14.jpg",
-                "assets/car-046-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "13 477 mil", status: "Available", hp: "215 Hk", transmission: "Automatic", plate: "SWE-432" },
-        equipment: ["ABS brakes","Four-wheel drive","Anti-cable/Anti-spins","ACC/Climate plant","Airbag driver/Passenger front","Side airbags/Sidock Rock Curtains","Airbag rear","Shutdownable airbag passenger","Keyless/Key-Free Start","Touch/Touchscreen","Bluetooth Hands-free/Music streaming","GPS/Navination","Apple CarPlay/Android Auto","Reversing camera","Front/rear parking sensors","Adaptive cruise control","Clothing (fabric)","Seat heating (front)","Auto brake","AUX input","Dazzling inner-back mirror","Backstart help","Children's lock","Brake assistance","Central lock (districted)","Divisible rear seat","Digital meter house","Elin retractable side mirrors","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Folding rear seats","ISOFIX mounts rear","Cooled glove compartment","Driver Assistance","Multifunction steering wheel","Starting barrier","Heated windscreen wipers","USB socket","Outer temperature gauge","Electrical lifts (front and rear)","Handbrake (electronic)","LED Headlights","Full-light assistance","Fog light up front","Flat cargo space","Rain sensor","Start/stop function","Tinted squares","Switchboard paddles","18\" Light alloy wheels"]
-    },
-    {
-        id: "car-045",
-        badge: "SUV",
-        title: "Honda CR-V",
-        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 7 612 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-045-img-01.jpg",
-            interior: "assets/car-045-img-02.jpg",
-            cockpit: "assets/car-045-img-03.jpg",
-            engine: "assets/car-045-img-04.jpg",
-            all: [
-                "assets/car-045-img-01.jpg",
-                "assets/car-045-img-02.jpg",
-                "assets/car-045-img-03.jpg",
-                "assets/car-045-img-04.jpg",
-                "assets/car-045-img-05.jpg",
-                "assets/car-045-img-06.jpg",
-                "assets/car-045-img-07.jpg",
-                "assets/car-045-img-08.jpg",
-                "assets/car-045-img-09.jpg",
-                "assets/car-045-img-10.jpg",
-                "assets/car-045-img-11.jpg",
-                "assets/car-045-img-12.jpg",
-                "assets/car-045-img-13.jpg",
-                "assets/car-045-img-14.jpg",
-                "assets/car-045-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2020", mileage: "7 612 mil", status: "Available", hp: "215 Hk", transmission: "Automatic", plate: "SWE-287" },
-        equipment: ["Towbar","fixed","ABS brakes","ACC","Airbag driver","Airbag passenger front","Anti-cable","Auto brake","AUX input","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Hands-free connection","Brake assistance","Central lock (districted)","Divisible rear seat","Digital meter house","Elin retractable side mirrors","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Folding rear seats","Road computer","ISOFIX mounts rear","Keyless Keyless Start","Cooled glove compartment","Driver Assistance","Light sensor","Reading lamp","Multifunction steering wheel","Flat cargo space","Spare wheel","Power steering","Side airbags","Side impact curtains","Makeup mirror","Starting barrier","Swedish sold","Heated windscreen wipers","USB socket","Outer temperature gauge"]
-    },
-    {
-        id: "car-044",
-        badge: "SUV",
-        title: "Honda CR-V",
-        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 5 820 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-044-img-01.jpg",
-            interior: "assets/car-044-img-02.jpg",
-            cockpit: "assets/car-044-img-03.jpg",
-            engine: "assets/car-044-img-04.jpg",
-            all: [
-                "assets/car-044-img-01.jpg",
-                "assets/car-044-img-02.jpg",
-                "assets/car-044-img-03.jpg",
-                "assets/car-044-img-04.jpg",
-                "assets/car-044-img-05.jpg",
-                "assets/car-044-img-06.jpg",
-                "assets/car-044-img-07.jpg",
-                "assets/car-044-img-08.jpg",
-                "assets/car-044-img-09.jpg",
-                "assets/car-044-img-10.jpg",
-                "assets/car-044-img-11.jpg",
-                "assets/car-044-img-12.jpg",
-                "assets/car-044-img-13.jpg",
-                "assets/car-044-img-14.jpg",
-                "assets/car-044-img-15.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2024", mileage: "5 820 mil", status: "Available", hp: "184 Hk", transmission: "Automatic", plate: "SWE-359" },
-        equipment: ["e-HEV Hybrid","E-CVT Aut. transmission","Panoramic glass ceiling","Navigation","Reversing camera","Front & rear parking sensors","Leather steering with heat","Wireless charger","Wireless Apple Carplay","Wireless Andoir Auto","Honda Connect","Tinted squares","Leather upholstery","Adaptive cruise control","Hands-free tailgate","Honda Sensing","LED headlights","Electric chair driver","Keyless Go","Electrically operated tailgate","8 speakers","ABS brakes","ACC","ACC 2 climate zones","Airbag driver","Airbag passenger front","Auto brake","Dazzling inner-back mirror","Shutdownable airbag passenger","Backstart help","Children's lock","Hands-free connection","Brake assistance","Central lock (districted)","Divisible rear seat","Digital Radio (DAB)","Digital meter house","Electrical lifts (front and rear)","Elstol passenger","Electrically heated side mirrors","Euro 6","Euro NCAP 5","Speed limiter","Folding rear seats","Road computer","GPS","ISOFIX mounts rear","Driver Assistance","Light sensor","Flat cargo space","Rails","Power steering","Side airbags","Side impact curtains","Sign recognition","Start/stop function","Starting barrier","Theft alarm","Seat heating (front)","Touch/Touchscreen","Fatigue Alerts","USB socket","Outer temperature gauge"]
-    },
-    {
-        id: "car-043",
-        badge: "SUV",
-        title: "Honda HR-V",
-        desc: "Sourced directly from Sweden. Exceptionally maintained HR-V with a fully documented 6 600 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-043-img-01.jpg",
-            interior: "assets/car-043-img-02.jpg",
-            cockpit: "assets/car-043-img-03.jpg",
-            engine: "assets/car-043-img-04.jpg",
-            all: [
-                "assets/car-043-img-01.jpg",
-                "assets/car-043-img-02.jpg",
-                "assets/car-043-img-03.jpg",
-                "assets/car-043-img-04.jpg",
-                "assets/car-043-img-05.jpg",
-                "assets/car-043-img-06.jpg",
-                "assets/car-043-img-07.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2022", mileage: "6 600 mil", status: "Available", hp: "131 Hk", transmission: "Automatic", plate: "SWE-363" },
-        equipment: ["ABS brakes","ACC air conditioning","Airbag driver","Airbag passenger front (closingable)","Android Auto","Anti-cable system","Antispin","Apple CarPlay","Auto brake","AUX input","Reversing camera","Bluetooth hands-free","Central lock (districted)","Divisible rear seat","Electric window lifts (rears)","Electric window lifts (front)","Elinable Side Mirrors","Adaptive cruise control","File change warning","Road computer","GPS","Handbrake (electronic)","Full-light assistance","Isofix mounts at the rear","Touchscreen","Keyless system (Keyless)","Multifunction steering wheel","Magic Seats Seats Seats","Light metal rims","Clothing (fabric)","Rain sensor","Power steering","Side airbags","Sign Scanning","Seat heating front","Winter Wheel Friction"]
-    },
-    {
-        id: "car-042",
-        badge: "SUV",
-        title: "Honda CR-V",
-        desc: "Sourced directly from Sweden. Exceptionally maintained CR-V with a fully documented 4 100 mil odometer reading and premium Swedish executive specifications.",
-        images: {
-            exterior: "assets/car-042-img-01.jpg",
-            interior: "assets/car-042-img-02.jpg",
-            cockpit: "assets/car-042-img-03.jpg",
-            engine: "assets/car-042-img-04.jpg",
-            all: [
-                "assets/car-042-img-01.jpg",
-                "assets/car-042-img-02.jpg",
-                "assets/car-042-img-03.jpg",
-                "assets/car-042-img-04.jpg",
-                "assets/car-042-img-05.jpg",
-                "assets/car-042-img-06.jpg",
-                "assets/car-042-img-07.jpg"
-            ]
-        },
-        specs: { origin: "Sweden 🇸🇪", type: "Petrol Turbo", year: "2024", mileage: "4 100 mil", status: "Available", hp: "184 Hk", transmission: "Automatic", plate: "SWE-333" },
-        equipment: ["ABS brakes","ACC air conditioning","Airbag driver","Airbag passenger front (closingable)","Android Auto","Anti-cable system","Antispin","Apple CarPlay","Auto brake","AUX input","Reversing camera","Luggage hatch (electric)","Bluetooth hands-free","Central lock (districted)","Divisible rear seat","Dead Angle Warning","Electric window lifts (rears)","Electric window lifts (front)","Elinable Side Mirrors","Electrically operated driver's seat","Adaptive cruise control","File change warning","Road computer","GPS","Handbrake (electronic)","Full-light assistance","Isofix mounts at the rear","Touchscreen","Panorama glass ceiling (Invisible)","Front parking sensors front + rear","Keyless system (Keyless)","Multifunction steering wheel","Light metal rims","LED Headlights","Fully dressed leather seats","Steering wheel heating","Rain sensor","Power steering","Side airbags","Sign Scanning","Theft alarm","Swedish sold","Seat heating front","Winter wheels alloy wheels"]
     },
     {
         id: "car-041",
